@@ -1,0 +1,14 @@
+
+tr { 
+	vertical-align: top;
+}
+
+/*
+	STRUCTURE
+*/
+.post { 
+	position: relative;
+	width: 610px; 
+	margin: 0px;
+	float: left;
+}
