@@ -1,0 +1,78 @@
+/*
+	RESET & BASIC SETUP
+*/
+
+
+body { 
+	font-size: 50.5%; 
+	font-family: 'Lucida Grande', Helvetica, sans-serif;
+	background: #121212;
+	color: #999; 
+}
+
+tr { 
+	vertical-align: top;
+}
+
+/*
+	STRUCTURE
+*/
+.post { 
+	position: relative;
+	width: 610px; 
+	margin: 0px;
+	float: left;
+}
+
+#home:target ~ #post .caption #firstpro,
+#portfolio:target ~ #post .caption #secpro,
+#about:target ~ #post .caption #thirpro,
+#contact:target ~ #post .caption #fourpro{
+	background: #000;
+	color: #fff;
+}
+
+.panel{
+	width: 98%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #000;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	margin-left: -102%;
+	z-index:200;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+.panel:target{
+	margin-left: 0%;
+	background-color: #b1e583;
+}
+
+.content{
+	right: 40px;
+	left: 280px;
+	top: 0px;
+	position: absolute;
+	padding-bottom: 30px;
+}
+.content h2{
+	font-size: 110px;
+	padding: 10px 0px 20px 0px;
+	margin-top: 52px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: #fff;
+	display: inline-block;
+	background: black;
+	padding: 10px;
+	margin: 3px 0px;
+}
