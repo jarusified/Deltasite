@@ -11,7 +11,7 @@ body{
 	height:100% !important;
 	height:100%;
 	margin:0 auto;
-	overflow:hidden;
+
 }
 a{
 	text-decoration:none;
@@ -57,7 +57,6 @@ header{
 	z-index: 3;
 }
 .main section{
-	overflow:hidden;
 }
 .main section page1{
 	background-image:url(image12.jpg);

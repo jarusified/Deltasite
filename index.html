@@ -10,15 +10,16 @@
 		<meta name="description" content=" Delta is a group of computer freaks who manage various sites of festember and pragyan "> 
 		<meta name="author" content="suraj jarus and giridhar ">
 		<meta name="keywords" content=" nitt, deltaforce, delta , tamilnadu, tiruchirapalli, computer freaks">
-        <link rel="stylesheet" type="text/css" href="css/page1/clocknav2.css" />
+		<link rel="stylesheet" type="text/css" href="css/page2/image.css">
+        <link rel="stylesheet" type="text/css" href="css/page2/style.css">
+       <link rel="stylesheet" type="text/css" href="css/page1/clocknav2.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/clocknav.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/machinegun.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/splitText.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
-        <link rel="stylesheet" type="text/css" href="css/page2/image.css">
-        <link rel="stylesheet" type="text/css" href="css/page2/style.css">
+        
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
 		
 		<style type="text/css"> 
@@ -38,8 +39,8 @@
 		<script type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
 		<script type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
 		<script type="text/javascript" src="js/firefly/firefly.js"></script>
-		<script type="text/javascript" src="js/page1/TweenMax.min.js"></script>
-		<!--<script type="text/javascript" src="js/page1/SplitTextPlugin.js"></script>
+		<!--<script type="text/javascript" src="js/page1/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/page1/SplitTextPlugin.js"></script>
 		<script type="text/javascript" src="js/page1/deltaintro.js"></script>-->
 		<script type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
 		<script type="text/javascript" src="js/page3/arbor.js"></script>
@@ -48,7 +49,7 @@
 		<script type="text/javascript" src="js/page2/jquery.mousewheel.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-			console.log("called");
+			//console.log("called");
 				$(".main").onepage_scroll({
 					sectionContainer:"section",
 					responsiveFallback:600
@@ -60,9 +61,13 @@
 				$(".page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$(".post").wrap("<td ></td>");
-				$("body").mousewheel(function(event, delta) {
-					this.scrollLeft -= (delta * 80);
+				//console.log(event);
+
+				$(".page_container").mousewheel(function(event, delta) {
 					event.preventDefault();
+					var scroll=$(".page_container").scrollLeft();
+					$(".page_container").scrollLeft(scroll-(delta*30));
+					//console.log("ndfd");
 				});   
 			});
 		</script>

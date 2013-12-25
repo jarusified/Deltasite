@@ -1,7 +1,8 @@
 /*! Copyright (c) 2011 Brandon Aaron (http://brandonaaron.net)
  * Licensed under the MIT License (LICENSE.txt).
  *
- * Thanks to: http://adomas.org/javascript-mouse-wheel/ for some pointers.
+ * Thanks to: http://adomas.org/javasc
+ ript-mouse-wheel/ for some pointers.
  * Thanks to: Mathias Bank(http://www.mathias-bank.de) for a scope bug fix.
  * Thanks to: Seamus Leahy for adding deltaX and deltaY
  *
@@ -19,14 +20,16 @@ if ($.event.fixHooks) {
         $.event.fixHooks[ types[--i] ] = $.event.mouseHooks;
     }
 }
-
 $.event.special.mousewheel = {
     setup: function() {
         if ( this.addEventListener ) {
             for ( var i=types.length; i; ) {
                 this.addEventListener( types[--i], handler, false );
             }
+                        this.onmousewheel = handler;
+
         } else {
+
             this.onmousewheel = handler;
         }
     },
@@ -70,7 +73,7 @@ function handler(event) {
         deltaY = 0;
         deltaX = -1*delta;
     }
-    
+
     // Webkit
     if ( orgEvent.wheelDeltaY !== undefined ) { deltaY = orgEvent.wheelDeltaY/120; }
     if ( orgEvent.wheelDeltaX !== undefined ) { deltaX = -1*orgEvent.wheelDeltaX/120; }

@@ -51,7 +51,7 @@ var Renderer = function(canvas){
 
 					var nearest = ps.nearest(_mouseP).distance > 50 ? ps.nearest(_mouseP) : null;
 					if(!nearest.node) return ;
-						console.log(nearest.node.name);
+						//console.log(nearest.node.name);
 						
 						var parent = ps.getEdgesFrom(nearest.node.name)[0].source;
 						var children = $.map(ps.getEdgesFrom(nearest.node.name), function(edge){
