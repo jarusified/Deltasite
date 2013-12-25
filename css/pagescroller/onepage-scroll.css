@@ -1,11 +1,6 @@
-body, html {
-  margin: 0;
-  -webkit-transition: opacity 400ms;
-  -moz-transition: opacity 400ms;
-  transition: opacity 400ms;
-}
 
-body, .onepage-wrapper, html {
+
+ .onepage-wrapper {
   display: block;
   position: static;
   padding: 0;
@@ -28,7 +23,7 @@ body, .onepage-wrapper, html {
 }
 
 .onepage-pagination {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 50%;
   z-index: 5;
@@ -68,7 +63,7 @@ body, .onepage-wrapper, html {
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .disabled-onepage-scroll .onepage-wrapper .section {

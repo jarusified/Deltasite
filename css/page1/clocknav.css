@@ -3,8 +3,7 @@
  /*General Demo Style */
 body{
 	-webkit-font-smoothing: antialiased;
-	overflow-y: scroll;
-	overflow-x: scroll;
+	
 }
 a{
 		text-decoration: none;
