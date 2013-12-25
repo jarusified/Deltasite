@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 	RESET & BASIC SETUP
 */
@@ -9,6 +10,8 @@ body {
 	background: #121212;
 	color: #999; 
 }
+=======
+>>>>>>> d4a00aae9d3f60d35e98bcbc55852d8047f410d4
 
 tr { 
 	vertical-align: top;
@@ -23,6 +26,7 @@ tr {
 	margin: 0px;
 	float: left;
 }
+<<<<<<< HEAD
 
 #home:target ~ #post .caption #firstpro,
 #portfolio:target ~ #post .caption #secpro,
@@ -76,3 +80,5 @@ tr {
 	padding: 10px;
 	margin: 3px 0px;
 }
+=======
+>>>>>>> d4a00aae9d3f60d35e98bcbc55852d8047f410d4
