@@ -10,18 +10,16 @@
 		<meta name="description" content=" Delta is a group of computer freaks who manage various sites of festember and pragyan "> 
 		<meta name="author" content="suraj jarus and giridhar ">
 		<meta name="keywords" content=" nitt, deltaforce, delta , tamilnadu, tiruchirapalli, computer freaks">
-		<link rel="stylesheet" type="text/css" href="css/page2/image.css">
-        <link rel="stylesheet" type="text/css" href="css/page2/style.css">
-       <link rel="stylesheet" type="text/css" href="css/page1/clocknav2.css" />
-        <link rel="stylesheet" type="text/css" href="css/page1/clocknav.css" />
+		<link rel="stylesheet" type="text/css" href="css/page2.css">
+        <link rel="stylesheet" type="text/css" href="css/page1.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/machinegun.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/splitText.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
-        
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
-		
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 		<style type="text/css"> 
 		*{
 			margin: 0;
@@ -39,7 +37,7 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
 		<script type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
-		<!--<script type="text/javascript" src="js/firefly/firefly.js"></script>-->
+		<script type="text/javascript" src="js/firefly/firefly.js"></script>
 		<!--<script type="text/javascript" src="js/page1/TweenMax.min.js"></script>
 		<script type="text/javascript" src="js/page1/SplitTextPlugin.js"></script>
 		<script type="text/javascript" src="js/page1/deltaintro.js"></script>-->
@@ -63,13 +61,10 @@
 				$(".page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$(".post").wrap("<td ></td>");
-				//console.log(event);
-
 				$(".page_container").mousewheel(function(event, delta) {
 					event.preventDefault();
 					var scroll=$(".page_container").scrollLeft();
 					$(".page_container").scrollLeft(scroll-(delta*30));
-					//console.log("ndfd");
 				});   
 			});
 		</script>
@@ -78,68 +73,88 @@
     <body>	
     	<div class="wrapper">	
 		   	<div class="main">
-				
-				<section class="page1 single">
-		    		<div class="page_container">
-			    		<div id="navigation">
-								<div class='mainlist'>
-									<div class="ch-item ch-img-1">
-										<div class="ch-info">
-											<h4>logo</h4>
-											<p><a href="http://facebook.com">FACEBOOK</a></p>
+				<div class="firefly">	
+					<section class="page1 single">
+			    		<div class="page_container">
+				    		<div id="navigation">
+									<div class='mainlist'>
+										<div class="ch-item ch-img-1">
+											<div class="ch-info">
+												<h4>logo</h4>
+												<p><a href="http://facebook.com">FACEBOOK</a></p>
+											</div>
 										</div>
 									</div>
-								</div>
-								
-								<div class='list1 otherlist'>
-									<div class="ch-item ch-img-1">
-										<div class="ch-info">
-											<h3>About us</h3>
-											<p><a href="http://facebook.com">FACEBOOK</a></p>
+									
+									<div class='list1 otherlist'>
+										<div class="ch-item ch-img-1">
+											<div class="ch-info">
+												<h3>About us</h3>
+												<p><a href="http://facebook.com">FACEBOOK</a></p>
+											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class='list2 otherlist'>
-									<div class="ch-item ch-img-1">
-										<div class="ch-info">
-											<h3>contact us</h3>
-											<p><a href="http://facebook.com">FACEBOOK</a></p>
+									<div class='list2 otherlist'>
+										<div class="ch-item ch-img-1">
+											<div class="ch-info">
+												<h3>contact us</h3>
+												<p><a href="http://facebook.com">FACEBOOK</a></p>
+											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class='list3 otherlist'>
-									<div class="ch-item ch-img-1">
-										<div class="ch-info">
-											<h3>blog</h3>
-											<p><a href="http://facebook.com">FACEBOOK</a></p>
+									<div class='list3 otherlist'>
+										<div class="ch-item ch-img-1">
+											<div class="ch-info">
+												<h3>blog</h3>
+												<p><a href="http://facebook.com">FACEBOOK</a></p>
+											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class='list4 otherlist'>
-									<div class="ch-item ch-img-1">
-										<div class="ch-info">
-											<h3>ABC</h3>
-											<p><a href="http://facebook.com">FACEBOOK</a></p>
+									<div class='list4 otherlist'>
+										<div class="ch-item ch-img-1">
+											<div class="ch-info">
+												<h3>ABC</h3>
+												<p><a href="http://facebook.com">FACEBOOK</a></p>
+											</div>
 										</div>
 									</div>
-								</div>
+							</div>
+
+							<div id="blockNavyBlue" class="blocks">
+								<p class="splitText" id="gun">
+									delta is blah blah.....
+								</p>
+							</div>	
 						</div>
 
-						<div id="blockNavyBlue" class="blocks">
-							<p class="splitText" id="gun">
-								delta is blah blah.....
-							</p>
-						</div>	
-					</div>
-
-				</section>
-				
+					</section>
+				</div>
 				<section class="page2">
 
 					<div id="1stpro" class="panel">
+						<nav>
+							<a class="link"	 href="#">
+								<span class="fa fa-arrow-circle-o-left"></span>
+								<label> Back </label>
+							</a>	
+						  	<a class="link" href="#">
+							    <span class="fa fa-download"></span>
+						    	<label>zip download</label>
+						  	</a>
+						  	<a class="link" href="#">
+						    	<span class="fa fa-briefcase"></span>
+						    	<label>GitHub Repository</label>
+						  	</a>
+						  	<a class="link" href="#">
+						    	<span class="fa fa-flask"></span>
+						    	<label>The Lab</label>
+						 	</a>
+
+						</nav>
+
 						<div class="content">
 							<h2>1stproject</h2>
 							<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -149,7 +164,10 @@
 						</div>
 					</div>
 
-					<div class="page_container">
+					<div class="page_container page_fit">
+						<div id="header">
+							<center>Projects</center>
+						</div>	
 						<div id="page-wrap">	
 							<div class="post" >	
 								<img src="../horizontal/resources/h.jpg" class="img1"/>
@@ -223,7 +241,7 @@
 
 				<section class="page3 single">
 					<div class="page_container">
-						<canvas id="canvas" width="100" height="100"></canvas>
+						<canvas id="canvas"></canvas>
 					</div>	
 				</section>
 			</div>	

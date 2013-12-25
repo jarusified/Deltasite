@@ -53,10 +53,10 @@ header{
 .main section .page_container{
 	position: relative;
 	margin:0 auto 0;
-	
 	z-index: 3;
 }
-.main section{
+.main section .page_fit{
+	top:30%;
 }
 .main section page1{
 	background-image:url(image12.jpg);
