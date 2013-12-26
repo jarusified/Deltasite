@@ -17,10 +17,10 @@
         <link rel="stylesheet" type="text/css" href="css/page1/splitText.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
+        <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
 		<style type="text/css"> 
+
 		*{
 			margin: 0;
 			padding: 0;
@@ -32,7 +32,14 @@
 			     -o-background-size : cover;
 			        background-size : cover;
 		}
-
+		#canvas2{
+			z-index:-1;
+			position:fixed;
+	
+		}
+		#fallback{
+			z-index: 0;
+		}
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
@@ -45,7 +52,7 @@
 		<script type="text/javascript" src="js/page3/arbor.js"></script>
 		<script type="text/javascript" src="js/page3/arbor-tween.js"></script>
 		<script type="text/javascript" src="js/page3/arbor-graphics.js"></script>
-		<script type="text/javascript" src="js/page2/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/page2/background.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 			//console.log("called");
@@ -58,14 +65,8 @@
 		</script>
 		<script>	
 			$(document).ready(function(){
-				$(".page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$(".post").wrap("<td ></td>");
-				$(".page_container").mousewheel(function(event, delta) {
-					event.preventDefault();
-					var scroll=$(".page_container").scrollLeft();
-					$(".page_container").scrollLeft(scroll-(delta*30));
-				});   
 			});
 		</script>
 		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
@@ -133,8 +134,8 @@
 					</section>
 				</div>
 				<section class="page2">
-
-					<div id="1stpro" class="panel">
+					<canvas id="canvas2"></canvas>
+					<div id="1stpro" class="panel1">
 						<nav>
 							<a class="link"	 href="#">
 								<span class="fa fa-arrow-circle-o-left"></span>
@@ -148,7 +149,7 @@
 						    	<span class="fa fa-briefcase"></span>
 						    	<label>GitHub Repository</label>
 						  	</a>
-						  	<a class="link" href="#">
+						  	<a class="link" id="link-project1" href="#project1demo">
 						    	<span class="fa fa-flask"></span>
 						    	<label>The Lab</label>
 						 	</a>
@@ -162,9 +163,25 @@
 							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
 							<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
 						</div>
+
+					</div>
+					<div id="project1demo" class="panel2">
+						<nav>
+							<a class="link"	 href="#1stpro">
+								<span class="fa fa-arrow-circle-o-left"></span>
+								<label> Back </label>
+							</a>	
+						</nav>
+						<div class="content">
+								<h2>PROJECT DEMO</h2>
+								<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+								<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+						</div>
 					</div>
 
-					<div class="page_container page_fit">
+					<div class="page_container page_fit" id="fallback">
 						<div id="header">
 							<center>Projects</center>
 						</div>	
@@ -277,4 +294,6 @@
 		</div>			
     </body>
     <script type="text/javascript" src="js/page3/main.js"></script>
+    <script type="text/javascript" src="js/page2/background.js"></script>
+
 </html>
