@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
         <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+        
 		<style type="text/css"> 
 
 		*{
@@ -40,6 +40,19 @@
 		#fallback{
 			z-index: 0;
 		}
+		@font-face {
+  			font-family: 'Open Sans';
+  			font-style: normal;
+  			font-weight: 300;
+			src: local('Open Sans Light'), local('OpenSans-Light'), url(style2.woff) format('woff');
+		}
+		@font-face {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 700;
+			src: local('Open Sans Bold'), local('OpenSans-Bold'), url(style1.woff) format('woff');
+		}
+
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
@@ -67,16 +80,7 @@
 			$(document).ready(function(){
 				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$(".post").wrap("<td ></td>");
-<<<<<<< HEAD
-=======
-				/*$(".page_container").mousewheel(function(event, delta) {
-					event.preventDefault();
-					console.log("scroll");
-					var scroll=$(".page_container").scrollLeft();
-					$(".page_container").scrollLeft(scroll-(delta*30));
-				});   */
->>>>>>> 85abb8324d7dd2b61260f3a6430ef67ecfcf9b21
-			});
+			});	
 		</script>
 		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
@@ -143,11 +147,7 @@
 					</section>
 				</div>
 				<section class="page2">
-<<<<<<< HEAD
 					<canvas id="canvas2"></canvas>
-=======
-
->>>>>>> 85abb8324d7dd2b61260f3a6430ef67ecfcf9b21
 					<div id="1stpro" class="panel1">
 						<nav>
 							<a class="link"	 href="#">

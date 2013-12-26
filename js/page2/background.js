@@ -10,11 +10,11 @@ var livePatern = {
   init: function(){
     this.canvas = document.getElementById('canvas2');
     this.context = this.canvas.getContext('2d');
-    this.cols = Math.floor(document.body.clientWidth / 24);
+    this.cols = Math.floor(document.body.clientWidth*10 / 24);
     this.rows = Math.floor(document.body.clientHeight / 24) + 1;
     
-    this.canvas.width = document.body.clientWidth*5;
-    this.canvas.height = document.body.clientHeight*5;
+    this.canvas.width = document.body.clientWidth*10;
+    this.canvas.height = document.body.clientHeight;
     
     this.drawBackground();
     this.animate();
