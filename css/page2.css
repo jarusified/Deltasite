@@ -1,0 +1,251 @@
+.img1{
+	position: relative;	
+	border: 5px solid white;
+	width: 600px;
+	height:400px;
+}
+.post{
+	position: relative;
+}
+.post .caption p { font-size: 3em; margin: 0 0 15px 0; }
+
+#page-wrap .post img {
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+#page-wrap .post .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	opacity: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;
+}
+
+#page-wrap .post .simple-caption {
+	height: 100px;
+	width: 610px;
+	display: block;
+	bottom: -98px;
+	line-height: 60pt;
+	text-align: center;
+}
+
+#page-wrap .post:hover .simple-caption {
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 1;
+	transform: translateY(-100%);
+}
+tr { 
+	vertical-align: top;
+}
+
+/*
+	STRUCTURE
+*/
+.post { 
+	position: relative;
+	width: 610px; 
+	margin: 0px;
+	float: left;
+}
+#home:target ~ #post .caption #firstpro,
+#portfolio:target ~ #post .caption #secpro,
+#about:target ~ #post .caption #thirpro,
+#contact:target ~ #post .caption #fourpro{
+	background: #000;
+	color: #fff;
+}
+
+.panel{
+	width: 100%%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #000;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	margin-left: -102%;
+	z-index:200;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+.panel:target{
+	margin-left: 0%;
+	background-color:rgba(224,238,238);
+}
+
+.content{
+	right: 40px;
+	left: 280px;
+	top: 0px;
+	position: absolute;
+	padding-bottom: 30px;
+}
+.content h2{
+	font-size: 110px;
+	padding: 10px 0px 20px 0px;
+	margin-top: 52px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: #fff;
+	display: inline-block;
+	background: black;
+	padding: 10px;
+	margin: 3px 0px;
+}
+
+/* github link and direct download css */
+
+nav 
+{
+	position: absolute;
+	z-index: 999;
+	left: 10px;
+	width: 4em;
+	top: 10%;
+	height: 90%;
+	padding: 0px;
+	max-height:400px;
+    min-height:200px;
+}
+
+nav  .link{
+	display: block;
+	height: 30%;
+	text-align: center;
+	color: #707070;
+	font-size: 2.20em;
+	line-height: 2.5em;
+	text-decoration: none;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+nav  .link:hover { color: #FEFEFE; }
+
+nav  a:last-child { border-bottom: 0px; }
+
+.link label
+{
+	position: absolute;
+	z-index: 999;
+	left: 50px;
+	color: #FFFFFF;
+	font-family:"open sans";
+  font-weight:500;
+  font-size:20px;
+	white-space: nowrap;
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	line-height: 3.5em;
+	opacity: 0;
+	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+ .link span:hover ~ label
+{
+	opacity: 1;
+	left: 80px;
+}
+
+
+.titlelink{
+	position: absolute;
+	z-index: 999;
+	left: 10px;
+	width: 4em;
+	top: 10%;
+	height: 90%;
+	padding: 0px;
+	display: block;
+	height: 30%;
+	text-align: center;
+	color: #707070;
+	font-size: 2.20em;
+	line-height: 2.5em;
+	text-decoration: none;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.titlelink:hover { color: #FEFEFE; }
+
+.titlelink label
+{
+	position: absolute;
+	z-index: 999;
+	left: 50px;
+	color: #000000;
+	font-family:"open sans";
+    font-weight:500;
+    font-size:20px;
+	white-space: nowrap;
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	line-height: 3.5em;
+	opacity: 0;
+	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+ .titlelink span:hover ~ label
+{
+	opacity: 1;
+	left: 80px;
+	top:300px;
+}
+
+/*.titlelink span #title{
+	position:absolute;
+	z-index:999;
+	left:40px;
+	color:#FFFFFF;
+	font-family: "open sans";
+	font-size:30px;
+	white-space: nowrap;
+	margin-top:10px;
+	padding: 0px 10px 0px 10px;
+	line-height: 3.5em;
+	opacity:1;
+	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.titlelink span:hover #title{
+	opacity:0.5;
+	left:30px;
+}
+*/
