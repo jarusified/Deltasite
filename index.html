@@ -67,6 +67,24 @@
 		<script type="text/javascript" src="js/page3/arbor-graphics.js"></script>
 		<script type="text/javascript" src="js/page2/background.js"></script>
 		<script type="text/javascript">
+			$(document).ready(function (){
+			    $("#contactonclick").click(function (){
+			        //$(this).animate(function(){
+			            $('html, body').animate({
+			                scrollTop: $(".page3").offset().top
+			            }, 2000);
+			        //});
+			    });
+        	});
+        	$(document).ready(function (){
+			    $("#projectonclick").click(function (){
+			        //$(this).animate(function(){
+			            $('html, body').animate({
+			                scrollTop: $(".page2").offset().top
+			            }, 1000);
+			        //});
+			    });
+        	});
 			$(document).ready(function(){
 			//console.log("called");
 				$(".main").onepage_scroll({
@@ -78,7 +96,7 @@
 		</script>
 		<script>	
 			$(document).ready(function(){
-				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
+				$("#page-wrap").wrapInner("<table cellspacing='10'><tr>");
 				$(".post").wrap("<td ></td>");
 			});	
 		</script>
@@ -95,7 +113,7 @@
 										<div class="ch-item ch-img-1">
 											<div class="ch-info">
 												<h4>logo</h4>
-												<p><a href="http://facebook.com">FACEBOOK</a></p>
+												<p><a href="#"></a></p>
 											</div>
 										</div>
 									</div>
@@ -104,7 +122,7 @@
 										<div class="ch-item ch-img-1">
 											<div class="ch-info">
 												<h3>About us</h3>
-												<p><a href="http://facebook.com">FACEBOOK</a></p>
+												<p><a href="#">want to know?</a></p>
 											</div>
 										</div>
 									</div>
@@ -113,7 +131,7 @@
 										<div class="ch-item ch-img-1">
 											<div class="ch-info">
 												<h3>contact us</h3>
-												<p><a href="http://facebook.com">FACEBOOK</a></p>
+												<p><a id="contactonclick" href="#">contactus</a></p>
 											</div>
 										</div>
 									</div>
@@ -122,7 +140,7 @@
 										<div class="ch-item ch-img-1">
 											<div class="ch-info">
 												<h3>blog</h3>
-												<p><a href="http://facebook.com">FACEBOOK</a></p>
+												<p><a href="#">BLOG</a></p>
 											</div>
 										</div>
 									</div>
@@ -130,8 +148,8 @@
 									<div class='list4 otherlist'>
 										<div class="ch-item ch-img-1">
 											<div class="ch-info">
-												<h3>ABC</h3>
-												<p><a href="http://facebook.com">FACEBOOK</a></p>
+												<h3>PROJECT</h3>
+												<p><a id="projectonclick" href="#">PROJECTS</a></p>
 											</div>
 										</div>
 									</div>
@@ -139,7 +157,7 @@
 
 							<div id="blockNavyBlue" class="blocks">
 								<p class="splitText" id="gun">
-									delta is blah blah.....
+									
 								</p>
 							</div>	
 						</div>

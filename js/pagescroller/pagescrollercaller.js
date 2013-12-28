@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$(".main").onepage_scroll({
 		sectionContainer:"section",
 		easing:"ease-in-out",
-		animationTime:1000,
+		animationTime:100,
 		pagination:true,
 		updateURL:true,
 		beforeMove: function(index){},
