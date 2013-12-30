@@ -2,8 +2,9 @@ body{
 	overflow:hidden;
 }
 .page2{
+		position: relative;
 		overflow-x: auto;
-		overflow-y:hidden;
+		overflow-y: hidden;
 }
 .img1{
 	position: relative;	
@@ -12,9 +13,54 @@ body{
 	height:400px;
 }
 .post{
-	position: relative;
+	position: absolute;
 }
 .post .caption p { font-size: 3em; margin: 0 0 15px 0; }
+
+.page2wrapper{
+	position:absolute;
+}
+.header1{
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	top :5px;
+	left :1px;
+	background-color: #222222;
+	width: 1298px;
+	height: 80px;
+	/*-moz-transition:height 1s ease-in-out;
+    -webkit-transition:height 1s ease-in-out;
+    -o-transition:height 1s ease-in-out;
+    transition:height 1s ease-in-out;*/
+}
+
+/*.header1:hover{
+	height: 85px;
+}*/
+
+.header2{
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	top :5px;
+	left :1px;
+	background-color: #ff69b4;
+	width: 1298px;
+	height: 83px;
+/*	-moz-transition:height 1s ease-in-out;
+    -webkit-transition:height 1s ease-in-out;
+    -o-transition:height 1s ease-in-out;
+    transition:height 1s ease-in-out;*/
+}
+/*.header2:hover{
+	height: 88px;
+}*/
+
+#page-wrap{
+	position: relative;
+	top: 0px;
+}
 
 #page-wrap .post img {
 	left: 0;

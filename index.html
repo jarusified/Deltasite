@@ -18,6 +18,7 @@
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
         <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
+       <script type=”text/javascript” src=”http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js“></script>
         
 		<style type="text/css"> 
 
@@ -67,6 +68,44 @@
 		<script type="text/javascript" src="js/page3/arbor-graphics.js"></script>
 		<script type="text/javascript" src="js/page2/background.js"></script>
 		<script type="text/javascript">
+			$(document).ready(function(){
+				var $lefts = $(".header1");
+				$(".page2").scroll(function(){
+					var s = $(this).scrollLeft();
+					console.log(s);
+					$(".header1").css({
+						'left': s+1
+					});
+					$(".header2").css({
+						'left': s+1
+					});
+				});
+			});
+
+			var $header1 = $(".header1");
+			var $header2 = $(".header2");
+			$(document).ready(function(){
+				$(".header1").mouseenter(function(){
+					console.log("aba");
+					$(".header1").animate({
+						"height": "88px"
+					},300);
+					$(".header2").animate({
+						"height": "93px"
+					},300);
+				});
+				
+				$(".header1").mouseleave(function(){
+					console.log("aba");
+					$(".header1").animate({
+						"height": "82px"
+					},300);
+					$(".header2").animate({
+						"height": "85px"
+					},300);
+				});
+			});	
+			
 			$(document).ready(function (){
 			    $("#contactonclick").click(function (){
 			        //$(this).animate(function(){
@@ -96,7 +135,7 @@
 		</script>
 		<script>	
 			$(document).ready(function(){
-				$("#page-wrap").wrapInner("<table cellspacing='10'><tr>");
+				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$(".post").wrap("<td ></td>");
 			});	
 		</script>
@@ -164,7 +203,11 @@
 
 					</section>
 				</div>
+
 				<section class="page2">
+					<div class="header1"></div>
+					<div class="header2"></div>
+					<!--<div class="page2wrapper">-->
 					<canvas id="canvas2"></canvas>
 					<div id="1stpro" class="panel1">
 						<nav>
@@ -211,14 +254,13 @@
 								<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
 						</div>
 					</div>
-
+					
 					<div class="page_container page_fit" id="fallback">
-						<div id="header">
-							<center>Projects</center>
-						</div>	
+						
+							
 						<div id="page-wrap">	
 							<div class="post" >	
-								<img src="../horizontal/resources/h.jpg" class="img1"/>
+								<img src="img/h.jpg" class="img1"/>
 								<div class="caption simple-caption">
 									<nav>
 										<a id="firstpro" class="link" href="#1stpro"</a>
@@ -235,7 +277,7 @@
 							
 									
 							<div class="post">
-								<img src="../horizontal/resources/h.jpg" class="img1"/>
+								<img src="img/h.jpg" class="img1"/>
 								<div class="caption simple-caption">
 									<nav><a id="firstpro" class="link" href="#1stpro"</a>
 											<span class="fa fa-arrow-circle-o-right">
@@ -250,7 +292,7 @@
 							</div>
 							
 							<div class="post">
-								<img src="../horizontal/resources/h.jpg" class="img1"/>
+								<img src="img/h.jpg" class="img1"/>
 								<div class="caption simple-caption">
 									<nav>
 										<a id="firstpro" class="link" href="#1stpro"</a>
@@ -266,7 +308,7 @@
 							</div>
 							
 							<div class="post">
-								<img src="../horizontal/resources/h.jpg" class="img1"/>
+								<img src="img/h.jpg" class="img1"/>
 								<div class="caption simple-caption">
 									<nav>
 									<a id="firstpro" class="link" href="#1stpro"</a>
@@ -282,7 +324,7 @@
 							</div>
 							
 							<div class="post">
-								<img src="../horizontal/resources/h.jpg" class="img1"/>
+								<img src="img/h.jpg" class="img1"/>
 								<div class="caption simple-caption">
 									<nav>
 										<a id="firstpro" class="link" href="#1stpro"</a>
@@ -298,7 +340,7 @@
 							</div>
 							
 							<div class="post">
-								<img src="../horizontal/resources/h.jpg" class="img1"/>
+								<img src="img/h.jpg" class="img1"/>
 								<div class="caption simple-caption">
 									<nav>
 										<a id="firstpro" class="link" href="#1stpro"</a>
@@ -314,6 +356,7 @@
 							</div>	
 						</div>	
 					</div>
+				<!--</div>-->
 				</section>
 
 				<section class="page3 single">

@@ -56,9 +56,12 @@ header{
 	z-index: 3;
 }
 .main section .page_fit{
-	top:30%;
+	position: relative;
+	background-color: #ffffff;
+	padding-top: 160px;
+	padding-left: 30px;
 }
-.main section page1{
+.main section .page1{
 	background-image:url(image12.jpg);
 	-webkit-background-size : cover;
 	-moz-background-size : cover;
