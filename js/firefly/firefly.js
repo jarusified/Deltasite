@@ -1,5 +1,5 @@
 
 $('.firefly').ready(function() {
 
-	$.firefly({images : ['1.jpg', '2.jpg'],total : 40}); 	
+	$.firefly({images : ['img/1.jpg', 'img/2.jpg'],total : 40}); 	
 });
