@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
         <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
-       <script type=”text/javascript” src=”http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js“></script>
+       
         
 		<style type="text/css"> 
 
@@ -80,9 +80,6 @@
 		<script type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
 		<script type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
 		<script type="text/javascript" src="js/firefly/firefly.js"></script>
-		<!--<script type="text/javascript" src="js/page1/TweenMax.min.js"></script>
-		<script type="text/javascript" src="js/page1/SplitTextPlugin.js"></script>
-		<script type="text/javascript" src="js/page1/deltaintro.js"></script>-->
 		<script type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
 		<script type="text/javascript" src="js/page3/arbor.js"></script>
 		<script type="text/javascript" src="js/page3/arbor-tween.js"></script>
@@ -93,12 +90,11 @@
 				var $lefts = $(".header1");
 				$(".page2").scroll(function(){
 					var s = $(this).scrollLeft();
-					console.log(s);
 					$(".header1").css({
-						'left': s+3
+						'left': s
 					});
 					$(".header2").css({
-						'left': s+3
+						'left': s
 					});
 				});
 			});
@@ -107,7 +103,6 @@
 			var $header2 = $(".header2");
 			$(document).ready(function(){
 				$(".header1").mouseenter(function(){
-					console.log("aba");
 					$(".header1").animate({
 						"height": "88px"
 					},300);
@@ -117,7 +112,6 @@
 				});
 				
 				$(".header1").mouseleave(function(){
-					console.log("aba");
 					$(".header1").animate({
 						"height": "82px"
 					},300);
@@ -129,27 +123,23 @@
 			
 			$(document).ready(function (){
 			    $("#contactonclick").click(function (){
-			        //$(this).animate(function(){
 			            $('html, body').animate({
 			                scrollTop: $(".page3").offset().top
 			            }, 2000);
-			        //});
+			            			        console.log("dash")
+
 			    });
         	});
         	$(document).ready(function (){
 			    $("#projectonclick").click(function (){
-			        //$(this).animate(function(){
 			            $('html, body').animate({
 			                scrollTop: $(".page2").offset().top
 			            }, 1000);
-			        //});
 			    });
         	});
 			$(document).ready(function(){
-			//console.log("called");
 				$(".main").onepage_scroll({
 					sectionContainer:"section",
-
 					responsiveFallback:600
 				});
 			});	
@@ -166,15 +156,15 @@
     <body>	
     	<div class="wrapper">	
 		   	<div class="main">
-				<div class="firefly">	
-					<section class="page1 single">
+				<section class="page1 single">
+			    	<div class="firefly">		
 			    		<div class="page_container">
 				    		<div id="navigation">
 									<div class='mainlist'>
 										<div class="ch-itemlogo ch-img-1 imglogo">
 											<div class="ch-info">
 												<h4>logo</h4>
-												<p><a href="#"></a></p>
+												<p><span></span></p>
 											</div>
 										</div>
 									</div>
@@ -183,16 +173,16 @@
 										<div class="ch-item ch-img-1 imgabtus">
 											<div class="ch-info">
 												<h3><i class="fa fa-users"></i></h3>
-												<p><a href="#">ABOUT US</a></p>
+												<p><span>ABOUT US</span></p>
 											</div>
 										</div>
 									</div>
 
 									<div class='list2 otherlist'>
 										<div class="ch-item ch-img-1 imgcntus">
-											<div class="ch-info">
+											<div class="ch-info" >
 												<h3><span class="fa fa-phone"></span></h3>
-												<p><a href="#">CONTACT US</a></p>
+												<p><span id="contactonclick">CONTACT US</span></p>
 											</div>
 										</div>
 									</div>
@@ -201,7 +191,7 @@
 										<div class="ch-item ch-img-1 imgblog">
 											<div class="ch-info">
 												<h3><span class="fa fa-desktop"></span></h3>
-												<p><a href="#">BLOG</a></p>
+												<p><span>BLOG</span></p>
 											</div>
 										</div>
 									</div>
@@ -210,27 +200,19 @@
 										<div class="ch-item ch-img-1 imgpro">
 											<div class="ch-info">
 												<h3><i class="fa fa-book"></i></h3>
-												<p><a id="projectonclick" href="#">PROJECTS</a></p>
+												<p><spanid="projectonclick">PROJECTS</span></p>
 											</div>
 										</div>
 									</div>
 							</div>
-
-							<div id="blockNavyBlue" class="blocks">
-								<p class="splitText" id="gun">
-									
-								</p>
-							</div>	
 						</div>
-
-					</section>
-				</div>
+					</div>
+				</section>
 
 				<section class="page2">
 					<div class="header1"><p>P R O J E C T S</p><a class="headerhm" href="#"><span class="fa fa-home fa-2x hm"></span></a></div>
 
 					<div class="header2"></div>
-					<div class="page2wrapper">
 					<canvas id="canvas2"></canvas>
 					<div id="1stpro" class="panel1">
 						<nav>
@@ -415,7 +397,6 @@
 			</div>	
 		</div>			
     </body>
-    <script type="text/javascript" src="js/page3/main.js"></script>
     <script type="text/javascript" src="js/page2/background.js"></script>
-
+    <script type="text/javascript" src="js/page3/main.js"></script>
 </html>
