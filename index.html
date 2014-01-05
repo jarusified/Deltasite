@@ -126,8 +126,12 @@
 			            $('html, body').animate({
 			                scrollTop: $(".page3").offset().top
 			            }, 2000);
-			            			        console.log("dash")
-
+			            var element1=document.getElementsByTagName('li')[0];
+			            var element2=document.getElementsByTagName('li')[2];
+			            var	children0=element1.childNodes[0];
+			            var	children1=element2.childNodes[0];
+			            	children0.setAttribute('class','');
+			            	children1.setAttribute('class','active');
 			    });
         	});
         	$(document).ready(function (){
@@ -135,6 +139,13 @@
 			            $('html, body').animate({
 			                scrollTop: $(".page2").offset().top
 			            }, 1000);
+
+			            var element1=document.getElementsByTagName('li')[0];
+			            var element2=document.getElementsByTagName('li')[1];
+			            var	children0=element1.childNodes[0];
+			            var	children1=element2.childNodes[0];
+			            	children0.setAttribute('class','');
+			            	children1.setAttribute('class','active');	
 			    });
         	});
 			$(document).ready(function(){
@@ -200,7 +211,7 @@
 										<div class="ch-item ch-img-1 imgpro">
 											<div class="ch-info">
 												<h3><i class="fa fa-book"></i></h3>
-												<p><spanid="projectonclick">PROJECTS</span></p>
+												<p><span id="projectonclick">PROJECTS</span></p>
 											</div>
 										</div>
 									</div>
