@@ -29,26 +29,32 @@
 
 		.imgcntus {
 			background: url(img/7.jpg);
+			transform:translateZ(0);
 		}
 
 		.imglogo {
 			background: url(img/7.jpg);
+			transform:translateZ(0);
 		}
 
 		.imgabtus {
 			background: url(img/7.jpg);
+			transform:translateZ(0);
 		}
 
 		.imgblog {
 			background: url(img/7.jpg);
+			transform:translateZ(0);
 		}
 
 		.imgpro{
 			background: url(img/7.jpg);
+			transform:translateZ(0);
 		}
 
 		.page1{
 			background-image:url(img/bg1.jpg);
+			transform:translateZ(0);
 			/*background-color: #222222;
 			-webkit-background-size : cover;
 			   -moz-background-size : cover;
@@ -77,15 +83,23 @@
 
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
-		<script type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
-		<script type="text/javascript" src="js/firefly/firefly.js"></script>
-		<script type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
-		<script type="text/javascript" src="js/page3/arbor.js"></script>
-		<script type="text/javascript" src="js/page3/arbor-tween.js"></script>
-		<script type="text/javascript" src="js/page3/arbor-graphics.js"></script>
-		<script type="text/javascript" src="js/page2/background.js"></script>
-		<script type="text/javascript">
+		<script async type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
+		<script async type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
+		<script async type="text/javascript" src="js/firefly/firefly.js"></script>
+		<script async type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
+		<script async type="text/javascript" src="js/page3/arbor.js"></script>
+		<script async type="text/javascript" src="js/page3/arbor-tween.js"></script>
+		<script async type="text/javascript" src="js/page3/arbor-graphics.js"></script>
+		<script async type="text/javascript" src="js/page2/background.js"></script>
+		<script async type="text/javascript">
+
+		window.requestAnimFrame= (function(callback){
+			return window.requestAnimFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+        	function(callback) {
+          		window.setTimeout(callback, 1000 / 60);
+        	};
+      	})();
+
 			$(document).ready(function(){
 				var $lefts = $(".header1");
 				$(".page2").scroll(function(){
@@ -97,11 +111,9 @@
 						'left': s
 					});
 				});
-			});
-
+			
 			var $header1 = $(".header1");
 			var $header2 = $(".header2");
-			$(document).ready(function(){
 				$(".header1").mouseenter(function(){
 					$(".header1").animate({
 						"height": "88px"
@@ -118,10 +130,8 @@
 					$(".header2").animate({
 						"height": "85px"
 					},300);
-				});
-			});	
+				});	
 			
-			$(document).ready(function (){
 			    $("#contactonclick").click(function (){
 			            $('html, body').animate({
 			                scrollTop: $(".page3").offset().top
@@ -133,8 +143,7 @@
 			            	children0.setAttribute('class','');
 			            	children1.setAttribute('class','active');
 			    });
-        	});
-        	$(document).ready(function (){
+        	
 			    $("#projectonclick").click(function (){
 			            $('html, body').animate({
 			                scrollTop: $(".page2").offset().top
@@ -147,12 +156,15 @@
 			            	children0.setAttribute('class','');
 			            	children1.setAttribute('class','active');	
 			    });
-        	});
-			$(document).ready(function(){
+        	
 				$(".main").onepage_scroll({
 					sectionContainer:"section",
 					responsiveFallback:600
 				});
+
+				function detectNode(){
+
+				}
 			});	
 
 		</script>
