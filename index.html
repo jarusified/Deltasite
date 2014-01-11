@@ -83,32 +83,38 @@
 
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>-->
 		<script async type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
 		<script async type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
-		<script async type="text/javascript" src="js/firefly/firefly.js"></script>
+		<!--<script async type="text/javascript" src="js/firefly/firefly.js"></script>-->
 		<script async type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
 		<script async type="text/javascript" src="js/page3/arbor.js"></script>
 		<script async type="text/javascript" src="js/page3/arbor-tween.js"></script>
 		<script async type="text/javascript" src="js/page3/arbor-graphics.js"></script>
 		<script async type="text/javascript" src="js/page2/background.js"></script>
+		
+		
 		<script async type="text/javascript">
-
 		window.requestAnimFrame= (function(callback){
 			return window.requestAnimFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
         	function(callback) {
           		window.setTimeout(callback, 1000 / 60);
         	};
       	})();
+		 
 
 			$(document).ready(function(){
+
+				
+
 				var $lefts = $(".header1");
 				$(".page2").scroll(function(){
 					var s = $(this).scrollLeft();
-					$(".header1").css({
-						'left': s
+					$(".header1 p").css({
+						'left': s+550
 					});
-					$(".header2").css({
-						'left': s
+					$(".header1 .hm").css({
+						'left': s+1060
 					});
 				});
 			
@@ -148,7 +154,13 @@
 			            $('html, body').animate({
 			                scrollTop: $(".page2").offset().top
 			            }, 1000);
-
+			            /*var stateObj= {foo:'bar'};
+			            function url()
+			            {
+			            	history.pushState(stateObj,"page2","page2.html");
+			            }
+			            var link = document.getElementById('projectonclick');
+			            link.addEventListener('projectonclick',url,false);*/
 			            var element1=document.getElementsByTagName('li')[0];
 			            var element2=document.getElementsByTagName('li')[1];
 			            var	children0=element1.childNodes[0];
@@ -156,10 +168,21 @@
 			            	children0.setAttribute('class','');
 			            	children1.setAttribute('class','active');	
 			    });
+
+			    /*$("#pg2home").click(function (){
+			            $('html, body').animate({
+			                scrollTop:$(".page1").offset().top
+			            }, 1000);
+			            return false;
+			    });*/
         	
 				$(".main").onepage_scroll({
 					sectionContainer:"section",
-					responsiveFallback:600
+					easing: "ease",
+					animationTime: 1000,
+					updateURL: true,
+					loop:true
+					/*responsiveFallback:600*/
 				});
 
 				function detectNode(){
@@ -179,14 +202,14 @@
     <body>	
     	<div class="wrapper">	
 		   	<div class="main">
-				<section class="page1 single">
+				<section id="page1" class="page1 single">
 			    	<div class="firefly">		
 			    		<div class="page_container">
 				    		<div id="navigation">
 									<div class='mainlist'>
 										<div class="ch-itemlogo ch-img-1 imglogo">
 											<div class="ch-info">
-												<h4>logo</h4>
+												<h3>logo</h3>
 												<p><span></span></p>
 											</div>
 										</div>
@@ -196,7 +219,7 @@
 										<div class="ch-item ch-img-1 imgabtus">
 											<div class="ch-info">
 												<h3><i class="fa fa-users"></i></h3>
-												<p><span>ABOUT US</span></p>
+												<p><span><a>ABOUT US</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -205,7 +228,7 @@
 										<div class="ch-item ch-img-1 imgcntus">
 											<div class="ch-info" >
 												<h3><span class="fa fa-phone"></span></h3>
-												<p><span id="contactonclick">CONTACT US</span></p>
+												<p><span id="contactonclick"><a>CONTACT US</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -214,7 +237,7 @@
 										<div class="ch-item ch-img-1 imgblog">
 											<div class="ch-info">
 												<h3><span class="fa fa-desktop"></span></h3>
-												<p><span>BLOG</span></p>
+												<p><span><a>BLOG</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -223,7 +246,7 @@
 										<div class="ch-item ch-img-1 imgpro">
 											<div class="ch-info">
 												<h3><i class="fa fa-book"></i></h3>
-												<p><span id="projectonclick">PROJECTS</span></p>
+												<p><span id="projectonclick"><a>PROJECTS</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -233,10 +256,10 @@
 				</section>
 
 				<section class="page2">
-					<div class="header1"><p>P R O J E C T S</p><a class="headerhm" href="#"><span class="fa fa-home fa-2x hm"></span></a></div>
+					<div class="header1"><p>P R O J E C T S</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
 
 					<div class="header2"></div>
-					<canvas id="canvas2"></canvas>
+					<!--<canvas id="canvas2"></canvas>-->
 					<div id="1stpro" class="panel1">
 						<nav>
 							<a class="link"	 href="#">

@@ -149,7 +149,7 @@ body{
 	transition: all .1s ease-in-out 0.4s;
 }
 
-.ch-info p a {
+.ch-info p span a {
 	display: block;
 	color: #fff;
 	color: rgba(255,255,255,0.7);
@@ -162,7 +162,14 @@ body{
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.ch-info p a:hover {
+.ch-info p span a:hover {
+	cursor: pointer;
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-info h3 i:hover {
+	cursor: pointer;
 	color: #fff222;
 	color: rgba(255,242,34, 0.8);
 }
