@@ -140,7 +140,7 @@
 			
 			    $("#contactonclick").click(function (){
 			            $('html, body').animate({
-			                scrollTop: $(".page3").offset().top
+			                scrollTop: $(".page4").offset().top
 			            }, 2000);
 			            var element1=document.getElementsByTagName('li')[0];
 			            var element2=document.getElementsByTagName('li')[2];
@@ -167,6 +167,17 @@
 			            var	children1=element2.childNodes[0];
 			            	children0.setAttribute('class','');
 			            	children1.setAttribute('class','active');	
+			    });
+			     $("#blogonclick").click(function (){
+			            $('html, body').animate({
+			                scrollTop: $(".page3").offset().top
+			            }, 2000);
+			            var element1=document.getElementsByTagName('li')[0];
+			            var element2=document.getElementsByTagName('li')[2];
+			            var	children0=element1.childNodes[0];
+			            var	children1=element2.childNodes[0];
+			            	children0.setAttribute('class','');
+			            	children1.setAttribute('class','active');
 			    });
 
 			    /*$("#pg2home").click(function (){
@@ -237,7 +248,7 @@
 										<div class="ch-item ch-img-1 imgblog">
 											<div class="ch-info">
 												<h3><span class="fa fa-desktop"></span></h3>
-												<p><span><a>BLOG</a></span></p>
+												<p><span id="blogonclick"><a>BLOG</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -256,10 +267,10 @@
 				</section>
 
 				<section class="page2">
-					<div class="header1"><p>P R O J E C T S</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
+					<canvas id="canvas2"></canvas>
+					<div class="header_projects"><p>P R O J E C T S</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
 
-					<div class="header2"></div>
-					<!--<canvas id="canvas2"></canvas>-->
+					<div class="header2_projects"></div>
 					<div id="1stpro" class="panel1">
 						<nav>
 							<a class="link"	 href="#">
@@ -432,10 +443,16 @@
 							</div>	
 						</div>	
 					</div>
+					
 				<!--</div>-->
 				</section>
 
-				<section class="page3 single">
+				<section class="page3 ">
+					<div class="header_blog"><p>B L O G</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
+
+					<div class="header2_blog"></div>
+				</section>
+				<section class="page4">
 					<div class="page_container">
 						<canvas id="canvas"></canvas>
 					</div>	
