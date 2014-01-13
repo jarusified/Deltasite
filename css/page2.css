@@ -83,55 +83,6 @@ body{
 	-webkit-transform: translateZ(0);
 }
 
-.header_blog{
-	position: absolute;
-	z-index: 200;
-	/*overflow: hidden;*/
-	top: 0px;
-	left : 0px;
-	background-color: #565657;
-	width:285%;
-	height: 12%;
-	/*text-align: center;*/
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
-
-.header_blog p {
-		position: absolute;	
-		left:550px;
-		top:1%;
-		color: #ffffff;
-		z-index: 3;
-		text-shadow: 0px 1px 1px #ffffff;
-		color: #000000;
-		font: 60px 'LeagueGothicRegular';
-		text-align: center;
-}
-
-.hm {
-	position: relative;
-	cursor: pointer;
-	top: 30px;
-	left: 1060px;
-}
-
-.headerhm{
-		color: #EBFA64;
-		text-shadow: 0px 1px 1px #EBFA64;
-		color: #000000;	
-}
-
-.header2_blog{
-	position: absolute;
-	z-index:10;
-	/*overflow: hidden;*/
-	background-color: #EBFA64;
-	width:285%;	
-	height:12.5%;
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
 
 
 #page-wrap{
