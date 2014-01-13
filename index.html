@@ -8,7 +8,6 @@
 		</title>	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content=" Delta is a group of computer freaks who manage various sites of festember and pragyan "> 
-		<meta name="author" content="suraj jarus and giridhar ">
 		<meta name="keywords" content=" nitt, deltaforce, delta , tamilnadu, tiruchirapalli, computer freaks">
 		<link rel="stylesheet" type="text/css" href="css/page2.css">
         <link rel="stylesheet" type="text/css" href="css/page1.css" />
@@ -56,11 +55,6 @@
 		.page1{
 			background-image:url(img/bg1.jpg);
 			transform:translateZ(0);
-			/*background-color: #222222;
-			-webkit-background-size : cover;
-			   -moz-background-size : cover;
-			     -o-background-size : cover;
-			        background-size : cover;*/
 		}
 		#canvas2{
 			z-index:-1;
@@ -69,6 +63,7 @@
 		#fallback{
 			z-index: 0;
 		}
+
 		@font-face {
   			font-family: 'Open Sans';
   			font-style: normal;
@@ -84,130 +79,23 @@
 
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>-->
 		<script async type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
 		<script async type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
 		<!--<script async type="text/javascript" src="js/firefly/firefly.js"></script>-->
 		<script async type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
-		<script async type="text/javascript" src="js/page3/arbor.js"></script>
-		<script async type="text/javascript" src="js/page3/arbor-tween.js"></script>
-		<script async type="text/javascript" src="js/page3/arbor-graphics.js"></script>
+		<script async type="text/javascript" src="js/page4/arbor.js"></script>
+		<script async type="text/javascript" src="js/page4/arbor-tween.js"></script>
+		<script async type="text/javascript" src="js/page4/arbor-graphics.js"></script>
 		<script async type="text/javascript" src="js/page2/background.js"></script>
-		
-		
+		<script async type="text/javascript" src="js/page3/blog.js"></script>
+		<script async type="text/javascript" src="js/extra.js"></script>
 		<script async type="text/javascript">
-		window.requestAnimFrame= (function(callback){
-			return window.requestAnimFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
-        	function(callback) {
-          		window.setTimeout(callback, 1000 / 60);
-        	};
-      	})();
-		 
-
-			$(document).ready(function(){
-
-				
-
-				var $lefts = $(".header1");
-				$(".page2").scroll(function(){
-					var s = $(this).scrollLeft();
-					$(".header1 p").css({
-						'left': s+550
-					});
-					$(".header1 .hm").css({
-						'left': s+1060
-					});
-				});
-			
-			var $header1 = $(".header1");
-			var $header2 = $(".header2");
-				$(".header1").mouseenter(function(){
-					$(".header1").animate({
-						"height": "88px"
-					},300);
-					$(".header2").animate({
-						"height": "93px"
-					},300);
-				});
-				
-				$(".header1").mouseleave(function(){
-					$(".header1").animate({
-						"height": "82px"
-					},300);
-					$(".header2").animate({
-						"height": "85px"
-					},300);
-				});	
-			
-			    $("#contactonclick").click(function (){
-			            $('html, body').animate({
-			                scrollTop: $(".page4").offset().top
-			            }, 2000);
-			            var element1=document.getElementsByTagName('li')[0];
-			            var element2=document.getElementsByTagName('li')[2];
-			            var	children0=element1.childNodes[0];
-			            var	children1=element2.childNodes[0];
-			            	children0.setAttribute('class','');
-			            	children1.setAttribute('class','active');
-			    });
-        	
-			    $("#projectonclick").click(function (){
-			            $('html, body').animate({
-			                scrollTop: $(".page2").offset().top
-			            }, 1000);
-			            /*var stateObj= {foo:'bar'};
-			            function url()
-			            {
-			            	history.pushState(stateObj,"page2","page2.html");
-			            }
-			            var link = document.getElementById('projectonclick');
-			            link.addEventListener('projectonclick',url,false);*/
-			            var element1=document.getElementsByTagName('li')[0];
-			            var element2=document.getElementsByTagName('li')[1];
-			            var	children0=element1.childNodes[0];
-			            var	children1=element2.childNodes[0];
-			            	children0.setAttribute('class','');
-			            	children1.setAttribute('class','active');	
-			    });
-			     $("#blogonclick").click(function (){
-			            $('html, body').animate({
-			                scrollTop: $(".page3").offset().top
-			            }, 2000);
-			            var element1=document.getElementsByTagName('li')[0];
-			            var element2=document.getElementsByTagName('li')[2];
-			            var	children0=element1.childNodes[0];
-			            var	children1=element2.childNodes[0];
-			            	children0.setAttribute('class','');
-			            	children1.setAttribute('class','active');
-			    });
-
-			    /*$("#pg2home").click(function (){
-			            $('html, body').animate({
-			                scrollTop:$(".page1").offset().top
-			            }, 1000);
-			            return false;
-			    });*/
-        	
-				$(".main").onepage_scroll({
-					sectionContainer:"section",
-					easing: "ease",
-					animationTime: 1000,
-					updateURL: true,
-					loop:true
-					/*responsiveFallback:600*/
-				});
-
-				function detectNode(){
-
-				}
-			});	
-
-		</script>
-		<script>	
-			$(document).ready(function(){
-				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
-				$(".post").wrap("<td ></td>");
-			});	
+			window.requestAnimFrame= (function(callback){
+				return window.requestAnimFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+		    	function(callback) {
+		      		window.setTimeout(callback, 1000 / 60);
+		    	};
+		  	})();
 		</script>
 		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
@@ -231,7 +119,7 @@
 										<div class="ch-item ch-img-1 imgabtus">
 											<div class="ch-info">
 												<h3><i class="fa fa-users"></i></h3>
-												<p><span><a>ABOUT US</a></span></p>
+												<p><span id="membersonclick"><a>MEMBERS</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -268,7 +156,7 @@
 				</section>
 
 				<section class="page2">
-					<canvas id="canvas2"></canvas>
+					<!---<canvas id="canvas2"></canvas>-->
 					<div class="header_projects"><p>P R O J E C T S</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
 
 					<div class="header2_projects"></div>
@@ -302,6 +190,7 @@
 						</div>
 
 					</div>
+
 					<div id="project1demo" class="panel2">
 						<nav>
 							<a class="link"	 href="#1stpro">
@@ -319,8 +208,6 @@
 					</div>
 					
 					<div class="page_container page_fit" id="fallback">
-						
-							
 						<div id="page-wrap">	
 							<div class="post" >	
 								<img src="img/h.jpg" class="img1"/>
@@ -441,8 +328,74 @@
 										</a>
 									</nav>		
 								</div>
+							</div>
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
 							</div>	
 						</div>	
+						<div id="upcomingprojects">
+								<nav>
+									<a class="link" href="#">
+									<span class="fa fa-lightbulb-o">
+									</span>
+									<label> Upcoming Projects </label>
+								</nav>	
+							</div>	
+
 					</div>
 					
 				<!--</div>-->
@@ -564,9 +517,12 @@
 						<canvas id="canvas"></canvas>
 					</div>	
 				</section>
+				<section class="page5">
+
+				</section>
 			</div>	
 		</div>			
     </body>
-    <script type="text/javascript" src="js/page2/background.js"></script>
-    <script type="text/javascript" src="js/page3/main.js"></script>
+    <!--<script type="text/javascript" src="js/page2/background.js"></script>-->	
+    <script type="text/javascript" src="js/page4/main.js"></script>
 </html>
