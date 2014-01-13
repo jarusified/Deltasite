@@ -82,8 +82,6 @@ body{
 	-webkit-transform: translateZ(0);
 }
 
-
-
 #page-wrap{
 	position: relative;
 	top: 200px;
@@ -128,6 +126,7 @@ body{
 	opacity: 1;
 	transform: translateY(-100%);
 }
+
 tr { 
 	vertical-align: top;
 }
@@ -186,7 +185,28 @@ tr {
 	-ms-transition: all .6s ease-in-out;
 	transition: all .6s ease-in-out;
 }
+
 .panel1:target{
+	margin-left: 0%;
+	background-color:rgba(224,238,238);
+}
+
+.panel3{
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #000;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	margin-left: -102%;
+	z-index:2000;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+
+.panel3:target{
 	margin-left: 0%;
 	background-color:rgba(224,238,238);
 }
@@ -206,6 +226,7 @@ tr {
 	-o-transition: all .8s ease-in-out;
 	transition: all .8s ease-in-out;
 }
+
 .panel2:target{
 	margin-top: 0%;
 	background-color: #ffcb00;
@@ -297,13 +318,12 @@ nav  a:last-child { border-bottom: 0px; }
 	left: 80px;
 }
 
-
-
 ::-webkit-scrollbar-track
 {
 	border: 1px solid black;
 	background-color: #F5F5F5;
 }
+
 ::-webkit-scrollbar
 {
 	width: 10px;
