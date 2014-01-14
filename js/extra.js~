@@ -1,4 +1,6 @@
- 		$(document).ready(function(){
+ 
+
+		$(document).ready(function(){
 			var $lefts = $(".header1");
 			$(".page2").scroll(function(){
 				var s = $(this).scrollLeft();
