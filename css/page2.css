@@ -34,6 +34,16 @@ body{
 	position:absolute;
 }
 
+.header_container p{
+	position:fixed;
+	left:40%;
+	color: #ffffff;
+	z-index: 1000;
+	text-shadow: 0px 1px 1px #ffffff;
+	color: #000000;
+	font: 60px 'LeagueGothicRegular';
+}
+
 .header_projects{
 	position: absolute;
 	z-index: 200;
@@ -41,23 +51,12 @@ body{
 	top: 0px;
 	left : 0px;
 	background-color: #565657;
-	width:300%;
+	width:360%;
 	height:7%;
 	-webkit-backface-visibility: hidden; 
 	-webkit-transform: translateZ(0);
 }
 
-.header_projects p {
-		position: fixed;	
-		left:50%;
-		top:1%;
-		color: #ffffff;
-		z-index: 3;
-		text-shadow: 0px 1px 1px #ffffff;
-		color: #000000;
-		font: 60px 'LeagueGothicRegular';
-		text-align: center;
-}
 
 .hm {
 	position: relative;
@@ -76,7 +75,7 @@ body{
 	position: absolute;
 	z-index:10;
 	background-color: #EBFA64;
-	width:300%;	
+	width:360%;	
 	height:8%;
 	-webkit-backface-visibility: hidden; 
 	-webkit-transform: translateZ(0);
@@ -84,7 +83,7 @@ body{
 
 #page-wrap{
 	position: relative;
-	top: 200px;
+	top: 0px;
 }
 
 #page-wrap .post img {
