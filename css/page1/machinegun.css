@@ -1,0 +1,34 @@
+	
+.split-sentences{	
+  position:absolute;
+  font-family: 'Anton', sans-serif;
+  font-weight:700;
+  margin:0;
+  padding:0;
+  width:800px;
+  text-align:center;
+  visibility:hidden;
+  font-size:120px;
+  top:0px;
+}
+
+#blockNavyBlue{
+
+  color:#f1f1f1;
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+
+
+.splitText{
+  top:100px;
+  left:75%;
+  position:relative;
+  margin-left:-300px !important;
+}
+
+
+#blockNavyBlue>.splitText{
+  font-size:40px !important;
+}
