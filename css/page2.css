@@ -48,8 +48,8 @@ body{
 }
 
 .header_projects p {
-		position: absolute;	
-		left:550px;
+		position: fixed;	
+		left:50%;
 		top:1%;
 		color: #ffffff;
 		z-index: 3;
