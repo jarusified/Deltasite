@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title> 
+			DELTA
+		</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content=" Delta is a group of computer freaks who manage various sites of festember and pragyan "> 
+		<meta name="keywords" content=" nitt, deltaforce, delta , tamilnadu, tiruchirapalli, computer freaks">
+        <link rel="stylesheet" type="text/css" href="css/page1.css" />
+        <link rel="stylesheet" type="text/css" href="css/page2.css">
+        <link rel="stylesheet" type="text/css" href="css/page3.css"/>
+        <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
+        <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
+        <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
+       
+        
+		<style type="text/css"> 
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.imgcntus {
+			background: url(img/7.jpg);
+			transform:translateZ(0);
+		}
+
+		.imglogo {
+			background: url(img/7.jpg);
+			transform:translateZ(0);
+		}
+
+		.imgabtus {
+			background: url(img/7.jpg);
+			transform:translateZ(0);
+		}
+
+		.imgblog {
+			background: url(img/7.jpg);
+			transform:translateZ(0);
+		}
+
+		.imgpro{
+			background: url(img/7.jpg);
+			transform:translateZ(0);
+		}
+
+		.page1{
+			background-image:url(img/bg1.jpg);
+			transform:translateZ(0);
+		}
+		#canvas2{
+			z-index:-1;
+			position: fixed;
+		}
+		#fallback{
+			z-index: 0;
+		}
+
+		@font-face {
+  			font-family: 'Open Sans';
+  			font-style: normal;
+  			font-weight: 300;
+			src: local('Open Sans Light'), local('OpenSans-Light'), url(style2.woff) format('woff');
+		}
+		@font-face {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 700;
+			src: local('Open Sans Bold'), local('OpenSans-Bold'), url(style1.woff) format('woff');
+		}
+
+		</style>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script async type="text/javascript" src="js/firefly/jquery.firefly.js"></script> 
+		<!--<script async type="text/javascript" src="js/firefly/firefly.js"></script>-->
+		<script async type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>
+		<script async type="text/javascript" src="js/page4/arbor.js"></script>
+		<script async type="text/javascript" src="js/page4/arbor-tween.js"></script>
+		<script async type="text/javascript" src="js/page4/arbor-graphics.js"></script>
+		<script async type="text/javascript" src="js/page3/blog.js"></script>
+		<script async type="text/javascript" src="js/extra.js"></script>
+		<script async type="text/javascript">
+			window.requestAnimFrame= (function(callback){
+				return window.requestAnimFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+		    	function(callback) {
+		      		window.setTimeout(callback, 1000 / 60);
+		    	};
+		  	})();
+		</script>
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>	
+    	<div class="wrapper">	
+		   	<div class="main">
+				<section id="page1" class="page1 single">
+					<canvas id="about" style="top=20%; left=50%";></canvas>
+			    	<div class="firefly">		
+			    		<div class="page_container">
+				    		<div id="navigation">
+									<div class='mainlist'>
+										<div class="ch-itemlogo ch-img-1 imglogo">
+											<div class="ch-info">
+												<h3>logo</h3>
+												<p><span></span></p>
+											</div>
+										</div>
+									</div>
+									
+									<div class='list1 otherlist'>
+										<div class="ch-item ch-img-1 imgabtus">
+											<div class="ch-info">
+												<h3><i class="fa fa-users"></i></h3>
+												<p><span id="membersonclick"><a>MEMBERS</a></span></p>
+											</div>
+										</div>
+									</div>
+
+									<div class='list2 otherlist'>
+										<div class="ch-item ch-img-1 imgcntus">
+											<div class="ch-info" >
+												<h3><span class="fa fa-phone"></span></h3>
+												<p><span id="contactonclick"><a>CONTACT US</a></span></p>
+											</div>
+										</div>
+									</div>
+
+									<div class='list3 otherlist'>
+										<div class="ch-item ch-img-1 imgblog">
+											<div class="ch-info">
+												<h3><span class="fa fa-desktop"></span></h3>
+												<p><span id="blogonclick"><a>BLOG</a></span></p>
+											</div>
+										</div>
+									</div>
+
+									<div class='list4 otherlist'>
+										<div class="ch-item ch-img-1 imgpro">
+											<div class="ch-info">
+												<h3><i class="fa fa-book"></i></h3>
+												<p><span id="projectonclick"><a>PROJECTS</a></span></p>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page2">
+					<!---<canvas id="canvas2"></canvas>-->
+					<div class="header_container">
+						<div class="header_projects"><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
+
+						<div class="header2_projects"></div>
+						<p> P R O J E C T S </p>
+					</div>	
+					<div id="1stpro" class="panel1">
+						<nav>
+							<a class="link"	 href="#">
+								<span class="fa fa-arrow-circle-o-left"></span>
+								<label> Back </label>
+							</a>	
+						  	<a class="link" href="#">
+							    <span class="fa fa-download"></span>
+						    	<label>zip download</label>
+						  	</a>
+						  	<a class="link" href="#">
+						    	<span class="fa fa-briefcase"></span>
+						    	<label>GitHub Repository</label>
+						  	</a>
+						  	<a class="link" id="link-project1" href="#project1demo">
+						    	<span class="fa fa-flask"></span>
+						    	<label>The Lab</label>
+						 	</a>
+
+						</nav>
+
+						<div class="content">
+							<h2>1stproject</h2>
+							<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+							<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+						</div>
+
+					</div>
+
+					<div id="project1demo" class="panel2">
+						<nav>
+							<a class="link"	 href="#1stpro">
+								<span class="fa fa-arrow-circle-o-left"></span>
+								<label> Back </label>
+							</a>	
+						</nav>
+						<div class="content">
+							<h2>PROJECT DEMO</h2>
+							<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+							<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+						</div>
+					</div>
+
+					<div id="upcomingprojects_panel" class="panel3">
+						<nav>
+							<a class="link" href="#">
+								<span class="fa fa-arrow-circle-o-left"></span>
+								<label> Back </label>
+							</a>
+						</nav>
+						<div class="content">
+						</div>
+					</div>			
+					
+					<div class="page_container page_fit" id="fallback">
+						<div id="page-wrap">	
+							<div class="post" >	
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							
+									
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>			
+								</div>
+							</div>
+							
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>	
+								</div>
+							</div>
+							
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>
+							<div class="post">
+								<img src="img/h.jpg" class="img1"/>
+								<div class="caption simple-caption">
+									<nav>
+										<div id="title">
+													BKJBKJADLHALKasd
+										</div>
+										<a id="firstpro" class="link" href="#1stpro"</a>
+											
+												<hr class="horiz" width = "2" size="80" ></hr>
+											<span class="fa fa-arrow-circle-o-right arr2">
+											</span>	
+
+											<label> this project is based on javascript </label>
+
+										</a>
+									</nav>		
+								</div>
+							</div>	
+						</div>	
+						<div id="upcomingprojects">
+								<nav>
+									<a class="link" href="#upcomingprojects_panel">
+									<span class="fa fa-lightbulb-o">
+									</span>
+									<label> Upcoming Projects </label>
+								</nav>	
+							</div>	
+
+					</div>
+					
+				<!--</div>-->
+				</section>
+
+				<section class="page3">
+					<div id="container">
+						<div class="header_blog">
+							<p>B L O G</p>
+							<a class="headerhm" href="#">
+								<span id="pg2home" class="fa fa-home fa-2x hm">
+								</span>
+							</a>
+						</div>
+
+						<div class="header2_blog"></div>
+						<div id="blogger"> 
+							<div id="head">
+								<center> JANUARY </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>	
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> FEBRUARY </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> MARCH </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> APRIL </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> MAY </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+						</div>
+						<div id="blogger">
+							<div id="head">	
+								<center> JUNE </center>
+							</div>
+							<div class="articles"><center>article </center></div>		
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> JULY </center>	
+							</div>
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+						</div>
+						<div id="blogger">
+							<div id="head">	
+								<center> AUGUST </center>	
+							</div>
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> SEPTEMBER </center>	
+							</div>
+							<div class="articles"><center>article </center></div>		
+							<div class="articles"><center>article </center></div>		
+							<div class="articles"><center>article </center></div>
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> OCTOBER </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+						</div>
+						<div id="blogger">
+							<div id="head">
+								<center> NOVEMBER </center>
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>
+							<div class="articles"><center>article </center></div>
+						</div>
+						<div id="blogger">
+							<div id="head">	
+								<center> DECEMBER </center>	
+							</div>
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+							<div class="articles"><center>article </center></div>	
+						</div>
+					</div>	
+				</section>
+				<section class="page4">
+					<div class="page_container">
+						<canvas id="canvas"></canvas>
+					</div>	
+				</section>
+				<section class="page5">
+
+				</section>
+			</div>	
+		</div>			
+    </body>
+    <!--<script type="text/javascript" src="js/page2/background.js"></script>-->	
+    <script type="text/javascript" src="js/page4/main.js"></script>
+</html>
