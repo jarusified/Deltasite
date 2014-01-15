@@ -1,102 +1,19 @@
-html, body {
-  display:-moz-box;
-  display: -ms-box;
-  display: -webkit-box;
-  display:box;
-  -webkit-box-flex:1;
-  -moz-box-flex:1;
-  -ms-box-flex:1;
-  box-flex :1;
-  -webkit-box-orient:vertical;
-  -moz-box-orient:vertical;
-  -ms-box-orient:vertical;
-  box-orient:vertical;
-  font-family: sans-serif;
-  height: 100%;
-  padding: 0;
-  margin: 0; 
-}
-#container{
-  height:20%; 
-  }
-body {
-  padding: 5px; }
-
-#head{
-  width:10%;
-  height:25%;
-}
-
-#blogger {
-  top:20%;
-  position: relative;
-  display:-moz-box;
-  display: -ms-box;
-  display: -webkit-box;
-  display: box;
-  -webkit-box-flex:1;
-  -moz-box-flex:1;
-  -ms-box-flex:1;
-  box-flex:1;
-  -webkit-transition:all 0.2s ease;
-  -moz-transition:all 0.2s ease;
-  -ms-transition:all 0.2s ease;
-  transition: all 0.2s ease;
-  height: 33%;
-}
-
-#blogger:hover {
-  height: 66%; 
-}
-
-#blogger .articles {
-  display:-moz-box;
-  display: -ms-box;
-  display: -webkit-box;
-  display: box;
-  -webkit-box-flex:1;
-  -moz-box-flex:1;
-  -ms-box-flex:1;
-  box-flex:1;
-  -webkit-transition:all 0.2s ease;
-  -moz-transition:all 0.2s ease;
-  -ms-transition:all 0.2s ease;
-  transition:all 0.2s ease;
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid #aaa;
-  background-color: #ccc;
-  width: 33%;
-  position: relative;
-  color: #666;
-  font-size: 14px;
-  line-height: 12px; 
-}
-
-#blogger .articles:hover {    
-  width: 80%;
-  background-color: #b3b3b3; 
-}
-
-#blogger .articles::after, .blogger .articles::before {
-  content: '';
-  display: block;
+.page3{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #666; 
+  overflow: hidden;
 }
-
-#blogger .articles::before {
-  width: 1px;
-  height: 11px;
-  margin-top: -5px;
+.container{
+  position:absolute;
+  vertical-align: center;
+  overflow: auto;
+  max-height: 100%;
+  margin-top: 5%;
+  margin-left: 15%;
+  padding-right: 10%;
 }
-
-#blogger .articles::after {
-  width: 11px;
-  height: 1px;
-  margin-left: -5px; 
+.header_blog{
+  z-index: 20;
 }
-
-
+.header2_blog{
+  z-index: 19;
+}

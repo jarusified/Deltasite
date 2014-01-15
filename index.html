@@ -12,20 +12,27 @@
 		<meta name="keywords" content=" nitt, deltaforce, delta , tamilnadu, tiruchirapalli, computer freaks">
 		<link rel="stylesheet" type="text/css" href="css/page2.css">
         <link rel="stylesheet" type="text/css" href="css/page1.css" />
+        <link rel="stylesheet" type="text/css" href="css/page4.css">
+        <link rel="stylesheet" type="text/css" href="css/page3.css">
         <link rel="stylesheet" type="text/css" href="css/page1/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/machinegun.css" />
         <link rel="stylesheet" type="text/css" href="css/page1/splitText.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/onepage-scroll.css" />
         <link rel="stylesheet" type="text/css" href="css/pagescroller/pagescroller.css" />
         <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
+        <link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/snap.svg-min.js"></script>
        
         
 		<style type="text/css"> 
 
-		*{
+		/*{
 			margin: 0;
 			padding: 0;
-		}
+		}*/
 
 		.imgcntus {
 			background: url(img/7.jpg);
@@ -66,7 +73,9 @@
 			position: fixed;
 		}
 		#fallback{
-			z-index: 0;
+			z-index: 2;
+			width: 295%;
+			height: 100%;
 		}
 		@font-face {
   			font-family: 'Open Sans';
@@ -92,6 +101,36 @@
 		<script async type="text/javascript" src="js/page3/arbor-tween.js"></script>
 		<script async type="text/javascript" src="js/page3/arbor-graphics.js"></script>
 		<script async type="text/javascript" src="js/page2/background.js"></script>
+
+
+		<script>
+			$(document).ready(function() {
+	
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
 		
 		
 		<script async type="text/javascript">
@@ -130,10 +169,28 @@
 				});
 				
 				$(".header_projects").mouseleave(function(){
-					$(".header1").animate({
+					$(".header_projects").animate({
 						"height": "82px"
 					},300);
 					$(".header2_projects").animate({
+						"height": "85px"
+					},300);
+				});	
+
+				$(".header_blog").mouseenter(function(){
+					$(".header_blog").animate({
+						"height": "88px"
+					},300);
+					$(".header2_blog").animate({
+						"height": "93px"
+					},300);
+				});
+				
+				$(".header_blog").mouseleave(function(){
+					$(".header_blog").animate({
+						"height": "82px"
+					},300);
+					$(".header2_blog").animate({
 						"height": "85px"
 					},300);
 				});	
@@ -449,8 +506,101 @@
 
 				<section class="page3 ">
 					<div class="header_blog"><p>B L O G</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
-
 					<div class="header2_blog"></div>
+					<div class="wholewrap">
+					<div class="container demo-1">
+						<div id="grid" class="grid clearfix">
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/1.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/3.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/5.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/7.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/2.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/4.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/6.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+							<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+								<figure>
+									<img src="img/8.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+									<figcaption>
+										<h2>BAZINGA</h2>
+										<p>small description</p>
+										<button>View</button>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+				</div>
 				</section>
 				<section class="page4">
 					<div class="page_container">
