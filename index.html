@@ -110,30 +110,30 @@
 				var $lefts = $(".header1");
 				$(".page2").scroll(function(){
 					var s = $(this).scrollLeft();
-					$(".header1 p").css({
+					$(".header_projects p").css({
 						'left': s+550
 					});
-					$(".header1 .hm").css({
+					$(".header_projects .hm").css({
 						'left': s+1060
 					});
 				});
 			
-			var $header1 = $(".header1");
-			var $header2 = $(".header2");
-				$(".header1").mouseenter(function(){
-					$(".header1").animate({
+			var $header1 = $(".header_projects");
+			var $header2 = $(".header2_projects");
+				$(".header_projects").mouseenter(function(){
+					$(".header_projects").animate({
 						"height": "88px"
 					},300);
-					$(".header2").animate({
+					$(".header2_projects").animate({
 						"height": "93px"
 					},300);
 				});
 				
-				$(".header1").mouseleave(function(){
+				$(".header_projects").mouseleave(function(){
 					$(".header1").animate({
 						"height": "82px"
 					},300);
-					$(".header2").animate({
+					$(".header2_projects").animate({
 						"height": "85px"
 					},300);
 				});	
