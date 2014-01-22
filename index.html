@@ -34,6 +34,7 @@
 			padding: 0;
 		}*/
 
+
 		.imgcntus {
 			background: url(img/7.jpg);
 			transform:translateZ(0);
@@ -265,6 +266,23 @@
 				$(".post").wrap("<td ></td>");
 			});	
 		</script>
+		<script type="text/javascript">
+
+
+			console.log($("html").innerWidth());
+		 	var $winwidth = $(window).width();
+		 	var $winheight = $(window).height();
+		 	console.log($winwidth);
+		 	$(document).ready(function(){
+		 	$(".mainlist").css({
+						'margin-left': ($winwidth)/2 - 110,
+						'margin-top' : ($winheight)/2 - 110
+					});
+		 	});
+
+
+
+		</script>
 		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
     <body>	
@@ -277,8 +295,7 @@
 									<div class='mainlist'>
 										<div class="ch-itemlogo ch-img-1 imglogo">
 											<div class="ch-info">
-												<h3>logo</h3>
-												<p><span></span></p>
+												
 											</div>
 										</div>
 									</div>
@@ -324,7 +341,7 @@
 				</section>
 
 				<section class="page2">
-					<canvas id="canvas2"></canvas>
+					<!--<canvas id="canvas2"></canvas>-->
 					<div class="header_projects"><p>P R O J E C T S</p><a class="headerhm" href="#"><span id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
 
 					<div class="header2_projects"></div>

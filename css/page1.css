@@ -1,5 +1,6 @@
 /* starting navigation css*/
-body{
+body,html{
+	width: 100%;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -10,8 +11,8 @@ body{
 
 .mainlist {
 	position: absolute;
-	margin-left: 540px;
-	margin-top: 230px;
+	/*margin-top: 230px;
+	margin-left: 540px;*/
 	width: 220px;
 	height: 220px;
 	text-align: center;
