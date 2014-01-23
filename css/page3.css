@@ -18,13 +18,10 @@ html, body {
 }
 #container{
   height:20%; 
-  }
-body {
-  padding: 5px; }
+}
 
-#head{
-  width:10%;
-  height:25%;
+body {
+  padding: 5px;
 }
 
 #blogger {
@@ -43,10 +40,13 @@ body {
   -ms-transition:all 0.2s ease;
   transition: all 0.2s ease;
   height: 33%;
+   font-family: 'adec',serif;
+  font-size: 16px;
+}
 }
 
 #blogger:hover {
-  height: 66%; 
+  height: 50%; 
 }
 
 #blogger .articles {
@@ -65,7 +65,7 @@ body {
   margin: 5px;
   padding: 5px;
   border: 1px solid #aaa;
-  background-color: #ccc;
+  background-color: #c2c2c2;
   width: 33%;
   position: relative;
   color: #666;
@@ -75,16 +75,14 @@ body {
 
 #blogger .articles:hover {    
   width: 80%;
-  background-color: #b3b3b3; 
+  background-color: #767070; 
 }
 
 #blogger .articles::after, .blogger .articles::before {
-  content: '';
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
-  background: #666; 
+  left: 50%; 
 }
 
 #blogger .articles::before {
@@ -99,4 +97,16 @@ body {
   margin-left: -5px; 
 }
 
+.articles #article-title{
+  color:red;
+  left:50%;
+  top:50%;
+}
 
+.articles #article-gist ,.articles #article-category {
+  opacity:0;
+  -webkit
+}
+.articles #article-gist:hover ,.articles #article-category:hover{
+  opacity:1;
+}

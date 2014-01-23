@@ -1,0 +1,40 @@
+var width=$(window).width(),
+    height=$(window).height();
+$(document).ready(function(){
+	$('.mainlist').css({
+		'margin-left':width/3-110,
+		'margin-top':height/2-110,
+		'width':width/8,
+		'height':width/8
+	});
+	$('.list1').css({
+		'margin-top':height/2-60,
+		'margin-left':width/3-295,
+		'width':width/15,
+		'height':width/15
+	});
+	$('.list2').css({
+		'margin-top':height/2-60,
+		'margin-left':width/3+185,
+		'width':width/15,
+		'height':width/15
+	});
+	$('.list3').css({
+		'margin-top':height/2-265,
+		'margin-left':width/3-60,
+		'width':width/15,
+		'height':width/15
+	});
+	$('.list4').css({
+		'margin-top':height/2+155,
+		'margin-left':width/3-60,
+		'width':width/15,
+		'height':width/15
+	});
+});
+
+$('mainlist').hover(
+	function(){
+		console.log($(this));
+	}
+);

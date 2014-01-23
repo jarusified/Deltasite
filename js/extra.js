@@ -96,7 +96,7 @@
 					easing: "ease",
 					animationTime: 1000,
 					updateURL: true,
-					loop:true
+					loop:false
 					/*responsiveFallback:600*/
 				});
 			$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
