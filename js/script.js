@@ -31,6 +31,10 @@ $(document).ready(function(){
 		'width':width/15,
 		'height':width/15
 	});
+	$('#delta-logo').css({
+		'width':width/8,
+		'height':width/8
+	});
 });
 
 $('mainlist').hover(

@@ -13,32 +13,20 @@ body{
 	border: 5px solid white;
 	width: 600px;
 	height:400px;
-}
-.post{
-	position: absolute;
-}
-.post .caption p { font-size: 3em; margin: 0 0 15px 0; }
-
-.page2wrapper{
-	position:absolute;
-}
-
-.header_container p{
-	position:fixed;
 	left:40%;
-	color: #ffffff;
-	z-index: 1000;
-	text-shadow: 0px 1px 1px #ffffff;
-	color: #000000;
-	font:60px;
-}
+		color: #ffffff;
+		z-index: 1000;
+		text-shadow: 0px 1px 1px #ffffff;
+		color: #000000;
+		font-size:30px;
+	}
 
-.header_projects{
-	position: absolute;
-	z-index: 200;
-	top: 0px;
-	left : 0px;
-	background-color: #220905;
+	.header_projects{
+		position: absolute;
+		z-index: 200;
+		top: 0px;
+		left : 0px;
+		background-color: rgba(255,255,255,0.7);
 	width:360%;
 	height:7%;
 	-webkit-backface-visibility: hidden; 
@@ -62,7 +50,7 @@ body{
 .header2_projects{
 	position: absolute;
 	z-index:10;
-	background-color: #EBFA64;
+	background-color: #0A122A;
 	width:360%;	
 	height:8%;
 	-webkit-backface-visibility: hidden; 

@@ -34,10 +34,11 @@
 		            $('html, body').animate({
 		                scrollTop: $(".page4").offset().top
 		            }, 2000);
-		            var element1=document.getElementsByTagName('li')[0];
-		            var element2=document.getElementsByTagName('li')[2];
-		            var	children0=element1.childNodes[0];
-		            var	children1=element2.childNodes[0];
+		            var element1=document.getElementsByTagName('li')[0],
+		                element2=document.getElementsByTagName('li')[2],
+		            	children0=element1.childNodes[0],
+		            	children1=element2.childNodes[0];
+
 		            	children0.setAttribute('class','');
 		            	children1.setAttribute('class','active');
 		    });
@@ -46,17 +47,11 @@
 		            $('html, body').animate({
 		                scrollTop: $(".page2").offset().top
 		            }, 1000);
-		            /*var stateObj= {foo:'bar'};
-		            function url()
-		            {
-		            	history.pushState(stateObj,"page2","page2.html");
-		            }
-		            var link = document.getElementById('projectonclick');
-		            link.addEventListener('projectonclick',url,false);*/
-		            var element1=document.getElementsByTagName('li')[0];
-		            var element2=document.getElementsByTagName('li')[1];
-		            var	children0=element1.childNodes[0];
-		            var	children1=element2.childNodes[0];
+		            var element1=document.getElementsByTagName('li')[0],
+			            element2=document.getElementsByTagName('li')[1],
+		            	children0=element1.childNodes[0],
+		            	children1=element2.childNodes[0];
+
 		            	children0.setAttribute('class','');
 		            	children1.setAttribute('class','active');	
 		    });
@@ -64,10 +59,11 @@
 		            $('html, body').animate({
 		                scrollTop: $(".page3").offset().top
 		            }, 2000);
-		            var element1=document.getElementsByTagName('li')[0];
-		            var element2=document.getElementsByTagName('li')[2];
-		            var	children0=element1.childNodes[0];
-		            var	children1=element2.childNodes[0];
+		            var element1=document.getElementsByTagName('li')[0],
+		                element2=document.getElementsByTagName('li')[2],
+		            	children0=element1.childNodes[0],
+		            	children1=element2.childNodes[0];
+
 		            	children0.setAttribute('class','');
 		            	children1.setAttribute('class','active');
 		    });
@@ -76,20 +72,13 @@
 		            $('html, body').animate({
 		                scrollTop: $(".page5").offset().top
 		            }, 2000);
-		            var element1=document.getElementsByTagName('li')[0];
-		            var element2=document.getElementsByTagName('li')[2];
-		            var	children0=element1.childNodes[0];
-		            var	children1=element2.childNodes[0];
+		            var element1=document.getElementsByTagName('li')[0],
+		                element2=document.getElementsByTagName('li')[2],
+		            	children0=element1.childNodes[0],
+		            	children1=element2.childNodes[0];
 		            	children0.setAttribute('class','');
 		            	children1.setAttribute('class','active');
 		    });
-
-			    /*$("#pg2home").click(function (){
-			            $('html, body').animate({
-			                scrollTop:$(".page1").offset().top
-			            }, 1000);
-			            return false;
-			    });*/
         	
 				$(".main").onepage_scroll({
 					sectionContainer:"section",
@@ -97,7 +86,6 @@
 					animationTime: 1000,
 					updateURL: true,
 					loop:false
-					/*responsiveFallback:600*/
 				});
 			$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 			$(".post").wrap("<td ></td>");
