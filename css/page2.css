@@ -17,10 +17,10 @@ body{
 		position: absolute;
 		overflow-x: auto;
 		overflow-y: hidden;
+		background-color: #ECE2CD;
 }
 .img1{
 	position: relative;	
-	border: 5px solid white;
 	width: 600px;
 	height:400px;
 }
@@ -50,15 +50,15 @@ body{
 
 .header_projects p {
 		position: absolute;	
-		left:15%;
+		left:14%;
 		top:1%;
 		color: #ffffff;
 		z-index: 3;
-		text-shadow: 0px 1px 1px #ffffff;
-		color: #000000;
+		text-shadow: 1px 3px 10px #000000;
 		font: 60px 'LeagueGothicRegular';
 		text-align: center;
 }
+
 
 .hm {
 	position: relative;
@@ -69,70 +69,21 @@ body{
 
 .headerhm{
 		color: #EBFA64;
-		text-shadow: 0px 1px 1px #EBFA64;
-		color: #000000;	
+		text-shadow: 0px 1px 1px #000000;
+		color: #ffffff;	
 }
 
 .header2_projects{
 	position: absolute;
 	z-index:10;
 	/*overflow: hidden;*/
-	background-color: #EBFA64;
+	background-color: #D35B3E;
 	width:295%;	
 	height:13%;
 	-webkit-backface-visibility: hidden; 
 	-webkit-transform: translateZ(0);
 }
 
-.header_blog{
-	position: absolute;
-	z-index: 200;
-	/*overflow: hidden;*/
-	top: 0px;
-	left : 0px;
-	background-color: #565657;
-	width:285%;
-	height: 12%;
-	/*text-align: center;*/
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
-
-.header_blog p {
-		position: absolute;	
-		left:550px;
-		top:1%;
-		color: #ffffff;
-		z-index: 3;
-		text-shadow: 0px 1px 1px #ffffff;
-		color: #000000;
-		font: 60px 'LeagueGothicRegular';
-		text-align: center;
-}
-
-.hm {
-	position: relative;
-	cursor: pointer;
-	top: 30px;
-	left: 1060px;
-}
-
-.headerhm{
-		color: #EBFA64;
-		text-shadow: 0px 1px 1px #EBFA64;
-		color: #000000;	
-}
-
-.header2_blog{
-	position: absolute;
-	z-index:10;
-	/*overflow: hidden;*/
-	background-color: #EBFA64;
-	width:285%;	
-	height:12.5%;
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
 
 
 #page-wrap{
@@ -142,11 +93,7 @@ body{
 
 #page-wrap .post img {
 	left: 0;
-		-webkit-transition: all 300ms ease-out;
-		-moz-transition: all 300ms ease-out;
-		-o-transition: all 300ms ease-out;
-		-ms-transition: all 300ms ease-out;	
-	transition: all 300ms ease-out;
+
 }
 
 #page-wrap .post .caption {
@@ -160,12 +107,12 @@ body{
 		-o-transition: all 300ms ease-out;
 		-ms-transition: all 300ms ease-out;	
 		transition: all 300ms ease-out;
-	left: 0;
+	
 }
 
 #page-wrap .post .simple-caption {
 	height: 100px;
-	width: 98.5%;
+	width: 100%;
 	z-index: 0;
 	display: block;
 	bottom: -98px;
@@ -206,12 +153,24 @@ tr {
 	left: 490px;
 }
 .post { 
-	position: relative;
+	/*position: relative;
 	background-color: #fff;
 	width: 610px; 
 	margin: 10px;
 	float: left;
-	z-index: 20;
+	z-index: 20;*/
+	border: 5px solid #fff;
+	cursor: pointer;
+	height: 400px;
+	width: 600px;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	
+		-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+		-moz-box-shadow: 1px 1px 1px 1px #ccc;
+		box-shadow: 1px 1px 1px 1px #ccc;
 }
 #home:target ~ #post .caption #firstpro,
 #portfolio:target ~ #post .caption #secpro,
@@ -406,15 +365,15 @@ nav  a:last-child { border-bottom: 0px; }
 ::-webkit-scrollbar-track
 {
 	border: 1px solid black;
-	background-color: #F5F5F5;
+	background-color: #ECE2CD;
 }
 ::-webkit-scrollbar
 {
 	width: 10px;
-	background-color: #F5F5F5;
+	background-color: #ECE2CD;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #000000;	
+	background-color: #565657;	
 }
