@@ -42,7 +42,7 @@ body{
 	left : 0px;
 	background-color: #565657;
 	width:295%;
-	height: 12%;
+	height: 13%;
 	/*text-align: center;*/
 	-webkit-backface-visibility: hidden; 
 	-webkit-transform: translateZ(0);
@@ -79,7 +79,7 @@ body{
 	/*overflow: hidden;*/
 	background-color: #D35B3E;
 	width:295%;	
-	height:13%;
+	height:14.5%;
 	-webkit-backface-visibility: hidden; 
 	-webkit-transform: translateZ(0);
 }

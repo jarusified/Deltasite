@@ -21,7 +21,7 @@
   left : 0px;
   background-color: #565657;
   width:285%;
-  height: 12%;
+  height: 13%;
   z-index: 20;
   /*text-align: center;*/
   -webkit-backface-visibility: hidden; 
@@ -46,7 +46,7 @@
   /*overflow: hidden;*/
   background-color: #D35B3E;
   width:285%; 
-  height:12.5%;
+  height:14.5%;
   -webkit-backface-visibility: hidden; 
   -webkit-transform: translateZ(0);
 }
