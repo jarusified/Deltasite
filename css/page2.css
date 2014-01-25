@@ -20,7 +20,6 @@ body{
 }
 .img1{
 	position: relative;	
-	border: 5px solid white;
 	width: 600px;
 	height:400px;
 }
@@ -60,6 +59,49 @@ body{
 		text-align: center;
 }
 
+/*.header_projects p{
+	float:left;
+	font-family: 'Bevan', arial, serif;
+	font-size:50px;
+	line-height:50px;
+	color:#f0f0f0;
+	margin-right:5px;
+	text-transform:uppercase;
+}
+.header_projects a{
+	display:block;
+	position:relative;
+	float:left;
+	clear:both;
+	color:#fff;
+}
+
+.header_projects a > span
+{
+	height:50px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.header_projects a span span{
+	position:absolute;
+	display:block;
+	left:0px;
+	top:0px;
+	text-align:center;
+}
+.header_projects a span span.sl-w1
+{
+	color:#fff;
+	text-shadow:0px 0px 1px #fff;
+	z-index:2;
+}
+.header_projects a span span.sl-w2{
+	color:#e82760;
+	text-shadow:-1px 1px 2px #9f0633;
+	z-index:3;
+}*/
+
 .hm {
 	position: relative;
 	cursor: pointer;
@@ -84,55 +126,6 @@ body{
 	-webkit-transform: translateZ(0);
 }
 
-.header_blog{
-	position: absolute;
-	z-index: 200;
-	/*overflow: hidden;*/
-	top: 0px;
-	left : 0px;
-	background-color: #565657;
-	width:285%;
-	height: 12%;
-	/*text-align: center;*/
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
-
-.header_blog p {
-		position: absolute;	
-		left:550px;
-		top:1%;
-		color: #ffffff;
-		z-index: 3;
-		text-shadow: 0px 1px 1px #ffffff;
-		color: #000000;
-		font: 60px 'LeagueGothicRegular';
-		text-align: center;
-}
-
-.hm {
-	position: relative;
-	cursor: pointer;
-	top: 30px;
-	left: 1060px;
-}
-
-.headerhm{
-		color: #EBFA64;
-		text-shadow: 0px 1px 1px #EBFA64;
-		color: #000000;	
-}
-
-.header2_blog{
-	position: absolute;
-	z-index:10;
-	/*overflow: hidden;*/
-	background-color: #EBFA64;
-	width:285%;	
-	height:12.5%;
-	-webkit-backface-visibility: hidden; 
-	-webkit-transform: translateZ(0);
-}
 
 
 #page-wrap{
@@ -142,11 +135,7 @@ body{
 
 #page-wrap .post img {
 	left: 0;
-		-webkit-transition: all 300ms ease-out;
-		-moz-transition: all 300ms ease-out;
-		-o-transition: all 300ms ease-out;
-		-ms-transition: all 300ms ease-out;	
-	transition: all 300ms ease-out;
+
 }
 
 #page-wrap .post .caption {
@@ -160,12 +149,12 @@ body{
 		-o-transition: all 300ms ease-out;
 		-ms-transition: all 300ms ease-out;	
 		transition: all 300ms ease-out;
-	left: 0;
+	
 }
 
 #page-wrap .post .simple-caption {
 	height: 100px;
-	width: 98.5%;
+	width: 100%;
 	z-index: 0;
 	display: block;
 	bottom: -98px;
@@ -206,12 +195,24 @@ tr {
 	left: 490px;
 }
 .post { 
-	position: relative;
+	/*position: relative;
 	background-color: #fff;
 	width: 610px; 
 	margin: 10px;
 	float: left;
-	z-index: 20;
+	z-index: 20;*/
+	border: 5px solid #fff;
+	cursor: pointer;
+	height: 400px;
+	width: 600px;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	
+		-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+		-moz-box-shadow: 1px 1px 1px 1px #ccc;
+		box-shadow: 1px 1px 1px 1px #ccc;
 }
 #home:target ~ #post .caption #firstpro,
 #portfolio:target ~ #post .caption #secpro,
