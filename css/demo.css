@@ -33,7 +33,7 @@ a:hover, a:focus {
 	color: #333;
 }
 
-.clearfix:before,
+/*.clearfix:before,
 .clearfix:after {
 	content: " ";
 	display: table;
@@ -61,10 +61,10 @@ a:hover, a:focus {
 	padding: 0 0 0.6em 0.1em;
 	font-size: 60%;
 	opacity: 0.7;
-}
+}*/
 
 /* To Navigation Style */
-.codrops-top {
+/*.codrops-top {
 	width: 100%;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -106,10 +106,10 @@ a:hover, a:focus {
 
 .codrops-icon-prev:before {
 	content: "\e004";
-}
+}*/
 
 /* Demo Buttons Style */
-.codrops-demos {
+/*.codrops-demos {
 	padding-top: 1em;
 	font-size: 0.8em;
 }
@@ -145,4 +145,4 @@ a:hover, a:focus {
 		display: none;
 	}
 
-}
+}*/

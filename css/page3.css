@@ -2,15 +2,18 @@
   position: absolute;
   overflow: hidden;
   background-color: #ECE2CD;
+  width: 100%;
+  height: 100%;
 }
 .container{
   position:absolute;
   vertical-align: center;
   overflow: auto;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
   margin-top: 6%;
-  margin-left: 15%;
-  padding-right: 10%;
+  margin-left: 1%;
+  padding-right: 1%;
 }
 
 .header_blog{
@@ -44,8 +47,9 @@
   position: absolute;
   z-index: 19;
   /*overflow: hidden;*/
-  background-color: #D35B3E;
-  width:285%; 
+  top: 0%;
+  background-color: #F77220 ;
+  width:100%; 
   height:14.5%;
   -webkit-backface-visibility: hidden; 
   -webkit-transform: translateZ(0);
@@ -62,3 +66,132 @@
     text-shadow: 0px 1px 1px #000000;
     color: #ffffff; 
 }
+
+.slide .blog{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url(../img/blogg4.jpg);
+  /*left: 18%;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color:  ;
+}
+
+.slide .blog .blog1auth1{
+  position: relative;
+  top: 30%;
+  left: 20%;
+  z-index: 10;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:4px solid #ffffff;
+  background-image: url("../img/7.jpg");
+}
+.slide .blog .git{
+  position: absolute;
+  text-shadow: 0px 1px 1px #000000;
+  top: 55%;
+  left: 21%;
+}
+
+.slide .blog .gplus{
+  position: absolute;
+  text-shadow: 0px 1px 1px #000000;
+  top: 61%;
+  left: 21%;
+}
+
+.slide .blog .linkedin{
+  position: absolute;
+  text-shadow: 0px 1px 1px #000000;
+  top: 67%;
+  left: 21%;
+}
+
+.slide .blog .labelgit{
+  position: absolute;
+  z-index: 999;
+  left: 22%;
+  top: 57.7%;
+  color: #000000;
+  font-family:"open sans";
+  font-weight:500;
+  font-size:20px;
+  /*white-space: nowrap;*/
+  margin-top: 0px;
+  padding: 0px 10px 0px 10px;
+  line-height: 0em;
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide .blog .labelgplus{
+  position: absolute;
+  z-index: 999;
+  left: 22%;
+  top: 63.7%;
+  color: #000000;
+  font-family:"open sans";
+  font-weight:500;
+  font-size:20px;
+  /*white-space: nowrap;*/
+  margin-top: 0px;
+  padding: 0px 10px 0px 10px;
+  line-height: 0em;
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide .blog .labellinkedin{
+  position: absolute;
+  z-index: 999;
+  left: 22%;
+  top: 69.7%;
+  color: #000000;
+  font-family:"open sans";
+  font-weight:500;
+  font-size:20px;
+  /*white-space: nowrap;*/
+  margin-top: 0px;
+  padding: 0px 10px 0px 10px;
+  line-height: 0em;
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.slide .blog .git:hover ~ .labelgit
+{
+  opacity: 1;
+  left: 23.5%;
+}
+
+.slide .blog .gplus:hover ~ .labelgplus
+{
+  opacity: 1;
+  left: 23.5%;
+}
+
+.slide .blog .linkedin:hover ~ .labellinkedin
+{
+  opacity: 1;
+  left: 23.5%;
+}
+
