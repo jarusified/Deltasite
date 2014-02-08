@@ -27,7 +27,7 @@
         <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
         <link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/demo.css" />-->
 		<!--<link rel="stylesheet" type="text/css" href="css/component.css" />-->
        
         
@@ -58,15 +58,11 @@
 			transform:translateZ(0);
 		}
 
-		.page1{
+		/*.page1{
 			background-image:url(img/bg1.jpg);
 			transform:translateZ(0);
-			/*background-color: #222222;
-			-webkit-background-size : cover;
-			   -moz-background-size : cover;
-			     -o-background-size : cover;
-			        background-size : cover;*/
-		}
+			
+		}*/
 		#canvas2{
 			z-index:-1;
 			position: fixed;
@@ -93,6 +89,7 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 		<script async type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
+
 		<script async type="text/javascript" src="js/firefly/jquery.firefly.js"></script>
 		<!--<script async type="text/javascript" src="js/firefly/firefly.js"></script>-->
 		<!--<script async type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>-->
@@ -102,6 +99,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="animation_correct.js"></script>
 		
 		
 		<!--<script async type="text/javascript" src="js/page2/background.js"></script>-->
@@ -189,51 +187,55 @@
 		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
     <body>	
-				<div id="page1 section0" class="page1 single section">
-			    	<div class="firefly">		
-			    		<div id="landingpg" class="page_container">
-										<div class="ch-itemlogo ch-img-1 imglogo">
-										</div>
-									
-									<div class='list1 otherlist'>
-										<div class="ch-item ch-img-1 imgabtus">
-											<div class="ch-info">
-												<h3><i class="fa fa-users"></i></h3>
-												<p><span data-menuanchor="aboutus"><a href="#">ABOUT US</a></span></p>
-											</div>
-										</div>
-									</div>
-
-									<div class='list2 otherlist'>
-										<div class="ch-item ch-img-1 imgcntus">
-											<div class="ch-info" >
-												<h3><span class="fa fa-phone"></span></h3>
-												<p><span data-menuanchor="contactus"><a href="#contactus">CONTACT US</a></span></p>
-											</div>
-										</div>
-									</div>
-
-									<div class='list3 otherlist'>
-										<div class="ch-item ch-img-1 imgblog">
-											<div class="ch-info">
-												<h3><span class="fa fa-desktop"></span></h3>
-												<p><span data-menuanchor="blog"><a href="#blog">BLOG</a></span></p>
-											</div>
-										</div>
-									</div>
-
-									<div class='list4 otherlist'>
-										<div class="ch-item ch-img-1 imgpro">
-											<div class="ch-info">
-												<h3><i class="fa fa-book"></i></h3>
-												<p><span data-menuanchor="projects"><a href="#projects">PROJECTS</a></span></p>
-											</div>
-										</div>
-									</div>
-						</div>
-					</div>
+    <div id="page1 section0" class="page1 single section">
+	<div class="page_container">
+	 	<div id="navigation">
+			<div class="mainlist">
+			
+					<img id="delta-logo" src="delta.png" />
+				
+			</div>
+			<div class="list otherlist">
+				<div class="item">
+					<div class="info">
+						<p><span><a id="enter-animation">Enter<a></span></p>
+					</div>	
 				</div>
+			</div>
+		<div class='list1 otherlist'>
+			<div class="item">
+				<div class="info">
+					<h3><span class="fa fa-phone"></span></h3>
+					<p><span data-menuanchor="contactus" id="contactonclck"><a href="#contactus">CONTACT US</a></span></p>
+				</div>
+			</div>
+		</div>
 
+		<div class='list3 otherlist'>
+			<div class="item">
+				<div class="info">
+					<h3><span class="fa fa-desktop"></span></h3>
+					<p><span data-menuanchor="blog" id="blogonclick"><a href="#blog">BLOG</a></span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class='list4 otherlist'>
+			<div class="item">
+				<div class="info">
+					<h3><span class="fa fa-book"></span></h3>
+					<p><span data-menuanchor="projects" id="projectonclick"><a href="#projects">PROJECT</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--<div class="background">
+			<p>hey wef fef wasdrew wef sd 
+			wfd wef egsd wefwef dwfws fef ds ef
+			e fef df efw fw efw</p>
+		</div>-->
+	</div>
+</div>
 				<div class="page2 section" id="section1">
 					<div class="header_projects"><p>P R O J E C T S</p><a class="headerhm" href="#home"><span data-menuanchor="home" id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
 

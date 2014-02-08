@@ -95,6 +95,7 @@
 }
 .slide .blog .git{
   position: absolute;
+  color: #fff;
   text-shadow: 0px 1px 1px #000000;
   top: 55%;
   left: 21%;
@@ -102,6 +103,7 @@
 
 .slide .blog .gplus{
   position: absolute;
+  color: #fff;
   text-shadow: 0px 1px 1px #000000;
   top: 61%;
   left: 21%;
@@ -109,6 +111,7 @@
 
 .slide .blog .linkedin{
   position: absolute;
+  color: #fff;
   text-shadow: 0px 1px 1px #000000;
   top: 67%;
   left: 21%;
