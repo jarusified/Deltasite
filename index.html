@@ -14,6 +14,8 @@
         <link rel="stylesheet" type="text/css" href="css/page1.css" />
         <link rel="stylesheet" type="text/css" href="css/page4.css">
         <link rel="stylesheet" type="text/css" href="css/page3.css">
+        <link rel="stylesheet" type="text/css" href="css/portal.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
         <!--<link rel="stylesheet" type="text/css" href="css/page1/normalize.css" />-->
         <!--<link rel="stylesheet" type="text/css" href="css/page1/machinegun.css" />-->
         <!--<link rel="stylesheet" type="text/css" href="css/page1/splitText.css" />-->
@@ -87,16 +89,19 @@
 
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+		<!---<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>-->
 		<script async type="text/javascript" src="js/page1/modernizr.custom.79639.js"></script>
 
 		<script async type="text/javascript" src="js/firefly/jquery.firefly.js"></script>
 		<!--<script async type="text/javascript" src="js/firefly/firefly.js"></script>-->
 		<!--<script async type="text/javascript" src="js/pagescroller/jquery.onepage-scroll.min.js"></script>-->
 
-
+		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+		<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="jquery.leanModal.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="animation_correct.js"></script>
@@ -113,9 +118,9 @@
 		 
 
 			$(document).ready(function(){
+				$("#go").leanModal({ top : 200, overlay : 0.4, closeButton: ".modal_close" });
 
-
-
+				
 				var $lefts = $(".header1");
 				$(".page2").scroll(function(){
 					var s = $(this).scrollLeft();
@@ -129,21 +134,21 @@
 			
 			var $header1 = $(".header_projects");
 			var $header2 = $(".header2_projects");
-				$(".header_projects").mouseenter(function(){
-					$(".header_projects").animate({
+				$(".header_projects,.header_portal").mouseenter(function(){
+					$(".header_projects,.header_portal").animate({
 						"height": "14%"
 					},300);
-					$(".header2_projects").animate({
+					$(".header2_projects,.header2_portal").animate({
 						"height": "15%"
 					},300);
 					
 				});
 				
-				$(".header_projects").mouseleave(function(){
-					$(".header_projects").animate({
+				$(".header_projects,.header_portal").mouseleave(function(){
+					$(".header_projects,.header_portal").animate({
 						"height": "13%"
 					},300);
-					$(".header2_projects").animate({
+					$(".header2_projects,.header2_portal").animate({
 						"height": "14.5%"
 					},300);
 					
@@ -171,7 +176,10 @@
 
     			$.fn.fullpage({
     				scrollOverflow: true,
-    				anchors:['home', 'projects','blog','contactus'],
+    				normalScrollElements: '.flex-container,#page-wrap',
+    				keyboardScrolling: true,
+    				fixedElements: '#go',
+    				anchors:['home', 'portal','projects','blog','contactus']
     				/*menu: 'landingpg'*/
 				});
 			});	
@@ -181,61 +189,127 @@
 			$(document).ready(function(){
 				$("#page-wrap").wrapInner("<table cellspacing='100'><tr>");
 				$(".post").wrap("<td ></td>");
+				$('body').mousewheel(function(event, delta) {
+				this.scrollLeft -= (delta * 40);
+				e.preventDefault();
+				console.log("AA");
+			});
+   
 			});	
 
 		</script>
 		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
     <body>	
-    <div id="page1 section0" class="page1 single section">
-	<div class="page_container">
-	 	<div id="navigation">
-			<div class="mainlist">
-			
-					<img id="delta-logo" src="delta.png" />
-				
-			</div>
-			<div class="list otherlist">
-				<div class="item">
-					<div class="info">
-						<p><span><a id="enter-animation">Enter<a></span></p>
-					</div>	
-				</div>
-			</div>
-		<div class='list1 otherlist'>
-			<div class="item">
-				<div class="info">
-					<h3><span class="fa fa-phone"></span></h3>
-					<p><span data-menuanchor="contactus" id="contactonclck"><a href="#contactus">CONTACT US</a></span></p>
-				</div>
-			</div>
-		</div>
+				<div id="page1 section0" class="page1 single section">
+						<a id="go" rel="leanModal" name="signup" href="#signup"><i class="fa fa-sign-in signinicon"></i></a>
+							<div id="signup">
+									<div id="signup-ct">
+									<div id="signup-header">
+										<h2>Create a new account</h2>
+										<p>It's simple, and free.</p>
+										<a class="modal_close" href="#"></a>
+									</div>
+									
+									<form action="">
+					     
+									  <div class="txt-fld">
+									    <label for="">Username</label>
+									    <input id="" class="good_input" name="" type="text" />
 
-		<div class='list3 otherlist'>
-			<div class="item">
-				<div class="info">
-					<h3><span class="fa fa-desktop"></span></h3>
-					<p><span data-menuanchor="blog" id="blogonclick"><a href="#blog">BLOG</a></span></p>
-				</div>
-			</div>
-		</div>
+									  </div>
+									  <div class="txt-fld">
+									    <label for="">Email address</label>
+									    <input id="" name="" type="text" />
+									  </div>
+									  <div class="txt-fld">
+									    <label for="">Password</label>
+									    <input id="" name="" type="text" />
 
-		<div class='list4 otherlist'>
-			<div class="item">
-				<div class="info">
-					<h3><span class="fa fa-book"></span></h3>
-					<p><span data-menuanchor="projects" id="projectonclick"><a href="#projects">PROJECT</a></span></p>
+									  </div>
+									  <div class="btn-fld">
+									  <button type="submit">Sign Up &raquo;</button>
+									 </div>
+							 		</form>
+							</div>
+						</div>
+						<div class="page_container">
+						 	<div id="navigation">
+								<div class="mainlist">
+								
+										<img id="delta-logo" src="delta.png" />
+									
+								</div>
+								<div class="list otherlist">
+									<div class="item">
+										<div class="info">
+											<p><span><a id="enter-animation">Enter<a></span></p>
+										</div>	
+									</div>
+								</div>
+							<div class='list1 otherlist'>
+								<div class="item">
+									<div class="info">
+										<h3><span class="fa fa-phone"></span></h3>
+										<p><span data-menuanchor="contactus" id="contactonclck"><a href="#contactus">CONTACT US</a></span></p>
+									</div>
+								</div>
+							</div>
+
+							<div class='list3 otherlist'>
+								<div class="item">
+									<div class="info">
+										<h3><span class="fa fa-desktop"></span></h3>
+										<p><span data-menuanchor="blog" id="blogonclick"><a href="#blog">BLOG</a></span></p>
+									</div>
+								</div>
+							</div>
+
+							<div class='list4 otherlist'>
+								<div class="item">
+									<div class="info">
+										<h3><span class="fa fa-book"></span></h3>
+										<p><span data-menuanchor="projects" id="projectonclick"><a href="#projects">PROJECT</a></span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+							<!--<div class="background">
+								<p>hey wef fef wasdrew wef sd 
+								wfd wef egsd wefwef dwfws fef ds ef
+								e fef df efw fw efw</p>
+							</div>-->
+					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-		<!--<div class="background">
-			<p>hey wef fef wasdrew wef sd 
-			wfd wef egsd wefwef dwfws fef ds ef
-			e fef df efw fw efw</p>
-		</div>-->
-	</div>
-</div>
+				<div class="portal section">
+					<div class="header_portal"><p>P O R T A L</p><a class="headerhm" href="#home"><span data-menuanchor="home" id="portalhome" class="fa fa-home fa-2x hm"></span></a></div>
+
+					<div class="header2_portal"></div>
+					<div class="portalcontent">
+						<ul class="flex-container">
+						  <li class="flex-item">1</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+						  <li class="flex-item">1</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+						  <li class="flex-item">1</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+						  <li class="flex-item">1</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+						  <li class="flex-item">1</li>
+						  <li class="flex-item">2</li>
+						  <li class="flex-item">3</li>
+
+						</ul>
+					</div>
+				</div>
 				<div class="page2 section" id="section1">
 					<div class="header_projects"><p>P R O J E C T S</p><a class="headerhm" href="#home"><span data-menuanchor="home" id="pg2home" class="fa fa-home fa-2x hm"></span></a></div>
 
